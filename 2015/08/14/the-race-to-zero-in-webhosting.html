@@ -1,0 +1,266 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8" /> 
+<title>The race to zero in web&shy;hosting | Usecue web development</title>
+
+<meta name="description" content="If you are a small business owner and you need a website, you will probably end up renting some cheap shared webspace at a big hosting company. Prices of the...">
+
+<link rel="shortcut icon" type="image/png" href="/img/icon-196x196.png" />
+<link rel="shortcut icon" sizes="196x196" href="/img/icon-196x196.png" />
+<link rel="apple-touch-icon" href="/img/icon-196x196.png" />
+
+<meta id="viewport" name="viewport" content="width=device-width">
+
+<!-- Facebook and Twitter integration -->
+<meta property="og:title" content="The race to zero in web&shy;hosting"/>
+
+<meta property="og:url" content="https://usecue.nl/2015/08/14/the-race-to-zero-in-webhosting.html"/>
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://usecue.nl"/>
+<meta property="og:site_name" content="Usecue web development"/>
+<meta property="og:description" content="If you are a small business owner and you need a website, you will probably end up renting some cheap shared webspace at a big hosting company. Prices of the..."/>
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@jhvanderschee">
+<meta name="twitter:title" content="The race to zero in web&shy;hosting" />
+
+<meta name="twitter:url" content="https://usecue.nl/2015/08/14/the-race-to-zero-in-webhosting.html" />
+<meta name="twitter:description" content="If you are a small business owner and you need a website, you will probably end up renting some cheap shared webspace at a big hosting company. Prices of the..." />
+
+<link rel="canonical" href="https://usecue.nl/2015/08/14/the-race-to-zero-in-webhosting.html">
+<link rel="sitemap" type="application/xml" title="Sitemap" href="https://usecue.nl/sitemap.xml" />
+
+<script src="/js/jquery-1.7.2.min.js"></script>
+<script src="/js/typed.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+<script>
+function next() {
+	if(document.getElementById('body').className == 'menu') {
+		document.getElementById('body').className = '';
+		setTimeout(function(){next()}, 400);
+		return false;
+	}
+	document.getElementById('controls').style.display = 'none'; 
+	document.getElementById('innerpage').className = 'next'; 
+	setTimeout(function(){
+		document.location.href='/2015/05/30/the-viewport-meta-tag-on-desktop.html';
+	}, 350);
+	return false;
+}
+function prev() {
+	if(document.getElementById('body').className == 'menu') {
+		document.getElementById('body').className = '';
+		setTimeout(function(){prev()}, 400);
+		return false;
+	}
+	document.getElementById('controls').style.display = 'none'; 
+	document.getElementById('innerpage').className = 'prev'; 
+	setTimeout(function(){
+		document.location.href='/2015/11/04/why-static-website-generators-are-the-next-big-thing.html';
+	}, 350);
+	return false;
+}
+var timeout;
+function menu() {
+	clearTimeout(timeout);
+	if(document.getElementById('body').className == 'menu') {
+		document.getElementById('body').className = '';
+		timeout = setTimeout(function(){document.getElementById('menu').style.zIndex = '-5'}, 600);
+	}
+	else {
+		document.getElementById('menu').style.zIndex = '5'
+		document.getElementById('body').className = 'menu'; 
+	}
+	return false;
+}
+$(document).ready( function() {
+    $("#page").addClass("loaded");
+    setInterval(function () {
+        $("#loading span").toggle();
+    },500);
+    $('iframe').load(function(){
+        setTimeout(function () {
+            endloading();
+        }, 300)
+    });
+
+    
+    
+
+    $(window).resize();
+
+    
+
+});
+
+$(document).keydown(function(e) {
+    switch(e.which) {
+        case 37: // left
+        prev();
+        break;
+
+        /*case 38: // up
+        break;*/
+
+        case 39: // right
+        next();
+        break;
+
+        /*case 40: // down
+        break;*/
+
+        default: return; // exit this handler for other keys
+    }
+    e.preventDefault(); // prevent the default action (scroll / move caret)
+
+});
+
+function endloading() {
+	$("iframe").css('opacity','1');
+    $("#imgoverlay").css('opacity','0.7');
+    $("#textcell").css('opacity','1');
+    $("#loading").css('opacity','0');
+}
+
+$(window).resize( function() {
+    if($(window).width()>1329) {
+        var trianglewidth = ($(window).width()-1100)/2;
+    } else {
+        var trianglewidth = ($(window).width()-770)/2;
+    }
+    if(trianglewidth<0) trianglewidth = 0;
+    $('#backgroundtriangle').css('height',$(window).height()+'px');
+    $('#triangle-topleft').css('border-top-width',$(window).height()+'px');
+    $('#backgroundtriangle').css('width',trianglewidth+'px');
+    $('#triangle-topleft').css('border-right-width',trianglewidth+'px');
+	
+    if (screen.width < 330) {
+	  document.getElementById("viewport").setAttribute("content", "width=330");
+	}
+    else { 
+      document.getElementById("viewport").setAttribute("content", "width=device-width");
+    }
+    if($(window).width()<600) {
+        $('#title').css('margin-top','45px');
+        var extramargin = $('body').height() - ($('#content').height()-35);
+        if (extramargin>45) $('#title').css('margin-top',extramargin+'px');
+        else $('#title').css('margin-top','45px');
+    }
+    
+});
+
+</script>
+</head>
+
+<body id="body">
+<div id="page" class="post">
+	<div id="innerpage" style="background-color: ;">
+	<div id="particles-js" style="z-index:0;"></div>
+    <div id="border"></div>
+	
+		<table cellpadding="0" cellspacing="0"><tr><td><div id="content">
+    <div id="innercontrols" class="showmobile">
+        <a href="#" onclick="menu();" id="openmenu"><img src="/img/menu2.png" alt="menu" class="black" /><img src="/img/menu.png" class="white" /></a>
+        <a href="#" onclick="menu();" id="closemenu"><img src="/img/close2.png" alt="close" class="black" /><img src="/img/close.png" class="white" /></a>
+        
+        <a href="#" onclick="prev();"><img src="/img/back2.png" alt="previous" class="black" /><img src="/img/back.png" class="white" /></a>
+        <a href="#" onclick="next();"><img src="/img/next2.png" alt="next" class="black" /><img src="/img/next.png" class="white" /></a>
+        
+    </div>
+
+<h3>14.08.2015</h3>
+<h1>The race to zero in web&shy;hosting</h1>
+
+<div data-cms-content-wrapper="/_layouts/post.html">
+<p>If you are a small business owner and you need a website, you will probably end up renting some cheap shared webspace at a big hosting company. Prices of these services are constantly under attack. XS4ALL used to ask 25 euro a month, but prices like 5 euro are more common these days.</p>
+
+<p>It is the well-known ‘race to zero’… and we are waiting for the first company that offers this service for free. I have good news for you: Zero is here! Github offers free webhosting.</p>
+
+<h2 id="too-good-to-be-true">Too good to be true</h2>
+
+<p>But… if life has taught me one thing, it is that if something sounds too good to be true, it probably is. So let us find out what this is really about. Who are these guys and why are they offering this service for free? Github hosts programming code and there main goal is to offer ‘version control’. So storing (multiple versions of) your code is what they do. Hosting this stored code over HTTP is an additional service, that consists of mainly the same ingredients. They offer this additional service for free because they want you to host your project website and your project code in the same account, which makes sense in a way. But if we want to host a commercial website, without storing any project code… would that be allowed? I looked it up in the terms and you ARE allowed to host your commercial website on Github. Furthermore, there seems to be no restrictions, other than that the website needs to contain YOUR company pages. I emphasized ‘your’, but that is just a matter of interpretation. This might mean you are not allowed to host somebody elses company page in your account.</p>
+
+<h2 id="only-static-files">Only static files</h2>
+
+<p>There is another restriction however, and this is a big one. The hosting only allows for static files. This makes it impossible to run a website that requires a database, like a WordPress installation. So… are we back to editing plain HTML? No! Let me explain…</p>
+
+<h2 id="cloudcannon-your-online-cms">CloudCannon, your online CMS</h2>
+
+<p>CMS systems that rely on static files have recently grown in popularity. One of the more elegant solutions is Jekyll, which is (not accidentally) supported by Github. The popularity of Jekyll inspired the guys behind CloudCannon to build an online CMS for static files. This means you simply log into a online backend, that is owned and hosted by CloudCannon. CloudCannon then syncronizes your files with Github on every update. This means you will never need to login to Github at all. Your customers will only see the user friendly CloudCannon environment.</p>
+
+<h2 id="your-own-domain-name">Your own domain name</h2>
+
+<p>Github made it super simple to connect your domain name. Just upload a CNAME file to the root of your directory and you are done. No show stopper here.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>So… you need to use Jekyll and the clients website must be relatively simple. Meaning this might not be a solution for everyone. There is also the dependency on CloudCannon and Github, which might be a threat. However, there are 3 compelling reasons to choose for this solution over WordPress:</p>
+
+<ol>
+  <li>Minimal costs for your client</li>
+  <li>Solid backups/version control through Github</li>
+  <li>A user friendly CMS (CloudCannon), that needs no updates</li>
+</ol>
+
+<p>Hard to resist, right?</p>
+
+</div>
+
+
+
+<div id="title" class="showmobile">Usecue <span>&nbsp;web development</span></div>
+</div></td></tr></table>
+	</div>
+	
+	<div id="menu"><table cellpadding="0" cellspacing="0"><tr><td><div id="content">
+		    <a href="/">home.</a><br />
+		    <a href="/over-mij/">over mij.</a><br />
+		    <a href="/portfolio/">portfolio.</a><br />
+		    <a href="/blog/">blog.</a><br />
+		    <a href="/contact/">contact.</a><br />		
+	</div></td></tr></table></div>
+</div>
+<div id="controls" class="showdesktop post">
+	<div id="innercontrols">
+		<a href="#" onclick="menu();" id="openmenu"><img src="/img/menu2.png" class="black" alt="menu" /><img src="/img/menu.png" class="white" alt="menu" /></a>
+		<a href="#" onclick="menu();" id="closemenu"><img src="/img/close2.png" class="black" alt="close" /><img src="/img/close.png" class="white" alt="close" /></a>
+		
+    <a href="#" onclick="prev();"><img src="/img/back2.png" alt="previous" class="black" /><img src="/img/back.png" alt="previous" class="white" /></a>
+		<a href="#" onclick="next();"><img src="/img/next2.png" alt="next" class="black" /><img src="/img/next.png" alt="next" class="white" /></a>
+    
+	</div>
+	<div id="title" class="showdesktop">Usecue <span>&nbsp;web development</span></div>
+</div>
+    <script>
+    //open external links in a new window
+    function externalLinks() {
+      for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) {
+        var b = c[a];
+        b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank")
+      }
+    }
+    externalLinks();
+    </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1168883-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script src="/js/particles.min.js"></script>
+
+</body>
+
+</html>

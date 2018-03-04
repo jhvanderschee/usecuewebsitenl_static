@@ -1,0 +1,255 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8" /> 
+<title>Security & Awareness 2017 | Usecue web development</title>
+
+<meta name="description" content="Ik kreeg een mail van KPN genaamd: Security &amp; Awareness 2017. Daar zou een spreker van Deloitte mij gratis kunnen vertellen hoe onveilig mijn bedrijfsnet...">
+
+<link rel="shortcut icon" type="image/png" href="/img/icon-196x196.png" />
+<link rel="shortcut icon" sizes="196x196" href="/img/icon-196x196.png" />
+<link rel="apple-touch-icon" href="/img/icon-196x196.png" />
+
+<meta id="viewport" name="viewport" content="width=device-width">
+
+<!-- Facebook and Twitter integration -->
+<meta property="og:title" content="Security & Awareness 2017"/>
+
+<meta property="og:url" content="https://usecue.nl/2017/02/16/security-awareness-2017.html"/>
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://usecue.nl"/>
+<meta property="og:site_name" content="Usecue web development"/>
+<meta property="og:description" content="Ik kreeg een mail van KPN genaamd: Security &amp; Awareness 2017. Daar zou een spreker van Deloitte mij gratis kunnen vertellen hoe onveilig mijn bedrijfsnet..."/>
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@jhvanderschee">
+<meta name="twitter:title" content="Security & Awareness 2017" />
+
+<meta name="twitter:url" content="https://usecue.nl/2017/02/16/security-awareness-2017.html" />
+<meta name="twitter:description" content="Ik kreeg een mail van KPN genaamd: Security &amp; Awareness 2017. Daar zou een spreker van Deloitte mij gratis kunnen vertellen hoe onveilig mijn bedrijfsnet..." />
+
+<link rel="canonical" href="https://usecue.nl/2017/02/16/security-awareness-2017.html">
+<link rel="sitemap" type="application/xml" title="Sitemap" href="https://usecue.nl/sitemap.xml" />
+
+<script src="/js/jquery-1.7.2.min.js"></script>
+<script src="/js/typed.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+<script>
+function next() {
+	if(document.getElementById('body').className == 'menu') {
+		document.getElementById('body').className = '';
+		setTimeout(function(){next()}, 400);
+		return false;
+	}
+	document.getElementById('controls').style.display = 'none'; 
+	document.getElementById('innerpage').className = 'next'; 
+	setTimeout(function(){
+		document.location.href='/2016/12/11/turbolinks5-is-awesome.html';
+	}, 350);
+	return false;
+}
+function prev() {
+	if(document.getElementById('body').className == 'menu') {
+		document.getElementById('body').className = '';
+		setTimeout(function(){prev()}, 400);
+		return false;
+	}
+	document.getElementById('controls').style.display = 'none'; 
+	document.getElementById('innerpage').className = 'prev'; 
+	setTimeout(function(){
+		document.location.href='/2018/02/27/de-need-for-speed-op-het-web.html';
+	}, 350);
+	return false;
+}
+var timeout;
+function menu() {
+	clearTimeout(timeout);
+	if(document.getElementById('body').className == 'menu') {
+		document.getElementById('body').className = '';
+		timeout = setTimeout(function(){document.getElementById('menu').style.zIndex = '-5'}, 600);
+	}
+	else {
+		document.getElementById('menu').style.zIndex = '5'
+		document.getElementById('body').className = 'menu'; 
+	}
+	return false;
+}
+$(document).ready( function() {
+    $("#page").addClass("loaded");
+    setInterval(function () {
+        $("#loading span").toggle();
+    },500);
+    $('iframe').load(function(){
+        setTimeout(function () {
+            endloading();
+        }, 300)
+    });
+
+    
+    
+
+    $(window).resize();
+
+    
+
+});
+
+$(document).keydown(function(e) {
+    switch(e.which) {
+        case 37: // left
+        prev();
+        break;
+
+        /*case 38: // up
+        break;*/
+
+        case 39: // right
+        next();
+        break;
+
+        /*case 40: // down
+        break;*/
+
+        default: return; // exit this handler for other keys
+    }
+    e.preventDefault(); // prevent the default action (scroll / move caret)
+
+});
+
+function endloading() {
+	$("iframe").css('opacity','1');
+    $("#imgoverlay").css('opacity','0.7');
+    $("#textcell").css('opacity','1');
+    $("#loading").css('opacity','0');
+}
+
+$(window).resize( function() {
+    if($(window).width()>1329) {
+        var trianglewidth = ($(window).width()-1100)/2;
+    } else {
+        var trianglewidth = ($(window).width()-770)/2;
+    }
+    if(trianglewidth<0) trianglewidth = 0;
+    $('#backgroundtriangle').css('height',$(window).height()+'px');
+    $('#triangle-topleft').css('border-top-width',$(window).height()+'px');
+    $('#backgroundtriangle').css('width',trianglewidth+'px');
+    $('#triangle-topleft').css('border-right-width',trianglewidth+'px');
+	
+    if (screen.width < 330) {
+	  document.getElementById("viewport").setAttribute("content", "width=330");
+	}
+    else { 
+      document.getElementById("viewport").setAttribute("content", "width=device-width");
+    }
+    if($(window).width()<600) {
+        $('#title').css('margin-top','45px');
+        var extramargin = $('body').height() - ($('#content').height()-35);
+        if (extramargin>45) $('#title').css('margin-top',extramargin+'px');
+        else $('#title').css('margin-top','45px');
+    }
+    
+});
+
+</script>
+</head>
+
+<body id="body">
+<div id="page" class="post">
+	<div id="innerpage" style="background-color: ;">
+	<div id="particles-js" style="z-index:0;"></div>
+    <div id="border"></div>
+	
+		<table cellpadding="0" cellspacing="0"><tr><td><div id="content">
+    <div id="innercontrols" class="showmobile">
+        <a href="#" onclick="menu();" id="openmenu"><img src="/img/menu2.png" alt="menu" class="black" /><img src="/img/menu.png" class="white" /></a>
+        <a href="#" onclick="menu();" id="closemenu"><img src="/img/close2.png" alt="close" class="black" /><img src="/img/close.png" class="white" /></a>
+        
+        <a href="#" onclick="prev();"><img src="/img/back2.png" alt="previous" class="black" /><img src="/img/back.png" class="white" /></a>
+        <a href="#" onclick="next();"><img src="/img/next2.png" alt="next" class="black" /><img src="/img/next.png" class="white" /></a>
+        
+    </div>
+
+<h3>16.02.2017</h3>
+<h1>Security & Awareness 2017</h1>
+
+<div data-cms-content-wrapper="/_layouts/post.html">
+<p>Ik kreeg een mail van KPN genaamd: Security &amp; Awareness 2017. Daar zou een spreker van Deloitte mij gratis kunnen vertellen hoe onveilig mijn bedrijfsnetwerk is.</p>
+
+<p>De eerste zin van de uitnodiging luidde:</p>
+
+<p><em>“Beste relatie,
+<br />Beveiliging van IT-omgevingen en onze data is van het allergrootste belang en we hoeven alleen maar het nieuws te lezen om ons de urgentie hiervan te realiseren.”</em></p>
+
+<p>Geen cijfers. Geen onderbouwing. Niets. Dat/dit is dus fearmongering. We ‘hoeven alleen maar het nieuws te lezen’ om de uitwerking hiervan (op politiek vlak) te zien.</p>
+
+<p><em>“Fearmongering or scaremongering is the spreading of frightening and exaggerated rumors of an impending danger or the habit or tactic of purposely and needlessly arousing public fear about an issue. This can take the form of psychological manipulation that uses fear-based tactics (scare tactics) including exaggeration and usually repetition to influence the public in order to achieve a desired outcome. It is a tactic used to scare or put fear into those viewing a campaign/advertisement and influence the outcome based on fear.”</em></p>
+
+<p>Dus ik mailde naar KPN dat ik dit fearmongering vond. Die reageerden vrijwel direct. Zij zagen dat niet zo en om dat kracht bij te zetten stuurde ze mij <a href="/KPN Internedservices Whitepaper -security deel 1.pdf">deze whitepapers</a> toe, waarin te lezen valt:</p>
+
+<p><em>”[…] dringen cybercriminelen niet één bedrijfsomgeving binnen maar liggen er mogelijk meerdere omgevingen binnen handbereik. […] Straks kan een cybercrimineel wellicht via een privénetwerk binnendringen in één van de verwachte 200 miljard devices.”</em></p>
+
+<p>Het woord ‘handbereik’, het niet noemen van aantallen (inbraken) of risico’s, het schetsen van een beangstigend mogelijk(!) toekomstbeeld… als dit geen fearmongering is, wat dan wel!?</p>
+
+<p>Naast bovenstaande, staan er geen cijfers in het document waaruit zou blijken dat het niet om het aanwakkeren en uitvergroten van een bepaalde angst gaat. Er worden namelijk alleen maar allerlei incidenten uitgelicht, waarbij de reden van de hacks achterwege wordt gelaten. Hiermee vergroot KPN bewust het mysterie en de angst voor hacks. Daarnaast is het enige(!) getal dat ze noemen een heel groot en algemeen cijfer, dat komt uit een rapport van Deloitte. Juist, het bedrijf van die meneer die mij gratis zou vertellen waarom ik een probleem had.</p>
+
+<p>Nee, bedankt!</p>
+
+</div>
+
+
+
+<div id="title" class="showmobile">Usecue <span>&nbsp;web development</span></div>
+</div></td></tr></table>
+	</div>
+	
+	<div id="menu"><table cellpadding="0" cellspacing="0"><tr><td><div id="content">
+		    <a href="/">home.</a><br />
+		    <a href="/over-mij/">over mij.</a><br />
+		    <a href="/portfolio/">portfolio.</a><br />
+		    <a href="/blog/">blog.</a><br />
+		    <a href="/contact/">contact.</a><br />		
+	</div></td></tr></table></div>
+</div>
+<div id="controls" class="showdesktop post">
+	<div id="innercontrols">
+		<a href="#" onclick="menu();" id="openmenu"><img src="/img/menu2.png" class="black" alt="menu" /><img src="/img/menu.png" class="white" alt="menu" /></a>
+		<a href="#" onclick="menu();" id="closemenu"><img src="/img/close2.png" class="black" alt="close" /><img src="/img/close.png" class="white" alt="close" /></a>
+		
+    <a href="#" onclick="prev();"><img src="/img/back2.png" alt="previous" class="black" /><img src="/img/back.png" alt="previous" class="white" /></a>
+		<a href="#" onclick="next();"><img src="/img/next2.png" alt="next" class="black" /><img src="/img/next.png" alt="next" class="white" /></a>
+    
+	</div>
+	<div id="title" class="showdesktop">Usecue <span>&nbsp;web development</span></div>
+</div>
+    <script>
+    //open external links in a new window
+    function externalLinks() {
+      for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) {
+        var b = c[a];
+        b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank")
+      }
+    }
+    externalLinks();
+    </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1168883-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script src="/js/particles.min.js"></script>
+
+</body>
+
+</html>

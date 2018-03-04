@@ -1,0 +1,270 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8" /> 
+<title>De 'Need for Speed' op het web | Usecue web development</title>
+
+<meta name="description" content="Dit is geen post over een webversie van de populaire racespel ‘Need for Speed’ van EA, ondanks dat ik vele uren, met een horde politiewagens achter mij aan, ...">
+
+<link rel="shortcut icon" type="image/png" href="/img/icon-196x196.png" />
+<link rel="shortcut icon" sizes="196x196" href="/img/icon-196x196.png" />
+<link rel="apple-touch-icon" href="/img/icon-196x196.png" />
+
+<meta id="viewport" name="viewport" content="width=device-width">
+
+<!-- Facebook and Twitter integration -->
+<meta property="og:title" content="De 'Need for Speed' op het web"/>
+
+<meta property="og:url" content="https://usecue.nl/2018/02/27/de-need-for-speed-op-het-web.html"/>
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://usecue.nl"/>
+<meta property="og:site_name" content="Usecue web development"/>
+<meta property="og:description" content="Dit is geen post over een webversie van de populaire racespel ‘Need for Speed’ van EA, ondanks dat ik vele uren, met een horde politiewagens achter mij aan, ..."/>
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@jhvanderschee">
+<meta name="twitter:title" content="De 'Need for Speed' op het web" />
+
+<meta name="twitter:url" content="https://usecue.nl/2018/02/27/de-need-for-speed-op-het-web.html" />
+<meta name="twitter:description" content="Dit is geen post over een webversie van de populaire racespel ‘Need for Speed’ van EA, ondanks dat ik vele uren, met een horde politiewagens achter mij aan, ..." />
+
+<link rel="canonical" href="https://usecue.nl/2018/02/27/de-need-for-speed-op-het-web.html">
+<link rel="sitemap" type="application/xml" title="Sitemap" href="https://usecue.nl/sitemap.xml" />
+
+<script src="/js/jquery-1.7.2.min.js"></script>
+<script src="/js/typed.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+<script>
+function next() {
+	if(document.getElementById('body').className == 'menu') {
+		document.getElementById('body').className = '';
+		setTimeout(function(){next()}, 400);
+		return false;
+	}
+	document.getElementById('controls').style.display = 'none'; 
+	document.getElementById('innerpage').className = 'next'; 
+	setTimeout(function(){
+		document.location.href='/2017/02/16/security-awareness-2017.html';
+	}, 350);
+	return false;
+}
+function prev() {
+	if(document.getElementById('body').className == 'menu') {
+		document.getElementById('body').className = '';
+		setTimeout(function(){prev()}, 400);
+		return false;
+	}
+	document.getElementById('controls').style.display = 'none'; 
+	document.getElementById('innerpage').className = 'prev'; 
+	setTimeout(function(){
+		document.location.href='/2015/04/09/usecues-also-known-as-affordances.html';
+	}, 350);
+	return false;
+}
+var timeout;
+function menu() {
+	clearTimeout(timeout);
+	if(document.getElementById('body').className == 'menu') {
+		document.getElementById('body').className = '';
+		timeout = setTimeout(function(){document.getElementById('menu').style.zIndex = '-5'}, 600);
+	}
+	else {
+		document.getElementById('menu').style.zIndex = '5'
+		document.getElementById('body').className = 'menu'; 
+	}
+	return false;
+}
+$(document).ready( function() {
+    $("#page").addClass("loaded");
+    setInterval(function () {
+        $("#loading span").toggle();
+    },500);
+    $('iframe').load(function(){
+        setTimeout(function () {
+            endloading();
+        }, 300)
+    });
+
+    
+    
+
+    $(window).resize();
+
+    
+
+});
+
+$(document).keydown(function(e) {
+    switch(e.which) {
+        case 37: // left
+        prev();
+        break;
+
+        /*case 38: // up
+        break;*/
+
+        case 39: // right
+        next();
+        break;
+
+        /*case 40: // down
+        break;*/
+
+        default: return; // exit this handler for other keys
+    }
+    e.preventDefault(); // prevent the default action (scroll / move caret)
+
+});
+
+function endloading() {
+	$("iframe").css('opacity','1');
+    $("#imgoverlay").css('opacity','0.7');
+    $("#textcell").css('opacity','1');
+    $("#loading").css('opacity','0');
+}
+
+$(window).resize( function() {
+    if($(window).width()>1329) {
+        var trianglewidth = ($(window).width()-1100)/2;
+    } else {
+        var trianglewidth = ($(window).width()-770)/2;
+    }
+    if(trianglewidth<0) trianglewidth = 0;
+    $('#backgroundtriangle').css('height',$(window).height()+'px');
+    $('#triangle-topleft').css('border-top-width',$(window).height()+'px');
+    $('#backgroundtriangle').css('width',trianglewidth+'px');
+    $('#triangle-topleft').css('border-right-width',trianglewidth+'px');
+	
+    if (screen.width < 330) {
+	  document.getElementById("viewport").setAttribute("content", "width=330");
+	}
+    else { 
+      document.getElementById("viewport").setAttribute("content", "width=device-width");
+    }
+    if($(window).width()<600) {
+        $('#title').css('margin-top','45px');
+        var extramargin = $('body').height() - ($('#content').height()-35);
+        if (extramargin>45) $('#title').css('margin-top',extramargin+'px');
+        else $('#title').css('margin-top','45px');
+    }
+    
+});
+
+</script>
+</head>
+
+<body id="body">
+<div id="page" class="post">
+	<div id="innerpage" style="background-color: ;">
+	<div id="particles-js" style="z-index:0;"></div>
+    <div id="border"></div>
+	
+		<table cellpadding="0" cellspacing="0"><tr><td><div id="content">
+    <div id="innercontrols" class="showmobile">
+        <a href="#" onclick="menu();" id="openmenu"><img src="/img/menu2.png" alt="menu" class="black" /><img src="/img/menu.png" class="white" /></a>
+        <a href="#" onclick="menu();" id="closemenu"><img src="/img/close2.png" alt="close" class="black" /><img src="/img/close.png" class="white" /></a>
+        
+        <a href="#" onclick="prev();"><img src="/img/back2.png" alt="previous" class="black" /><img src="/img/back.png" class="white" /></a>
+        <a href="#" onclick="next();"><img src="/img/next2.png" alt="next" class="black" /><img src="/img/next.png" class="white" /></a>
+        
+    </div>
+
+<h3>27.02.2018</h3>
+<h1>De 'Need for Speed' op het web</h1>
+
+<div data-cms-content-wrapper="/_layouts/post.html">
+<p>Dit is geen post over een webversie van de populaire racespel ‘<a href="https://en.wikipedia.org/wiki/Need_for_Speed">Need for Speed</a>’ van EA, ondanks dat ik vele uren, met een horde politiewagens achter mij aan, door donkere steden en over eindeloze snelwegen heb gescheurd. Dit artikel gaat over iets anders: de snelheid van het internet en specifiek de snelheid waarmee websites laden.</p>
+
+<p>Minstens zo cool, maar veel belangrijker, want de snelheid van een website is een grote factor voor het succes ervan. Meer dan 20 jaar geleden publiceerde de Neilson Norman Group al een arikel met <a href="https://www.nngroup.com/articles/the-need-for-speed/">ongeveer dezelfde titel</a> en eenzelfde strekking. Hoewel de online wereld in de afgelopen 20 jaar enorm veranderd is, is het onderwerp nog steeds relevant. Ik zal uitleggen waarom.</p>
+
+<h2 id="ongeduldige-bezoekers">Ongeduldige bezoekers</h2>
+
+<p>Onderzoek naar e-commerce websites heeft aangetoond dat <a href="https://blog.kissmetrics.com/seo-for-ecommerce-websites/">40 percent</a> van de consumenten een website verlaat wanneer deze niet binnen 3 seconden laadt. De gemiddelde laadtijd van websites is momenteel <a href="https://research.hubspot.com/reports/does-your-website-make-the-grade">3.7 seconds</a>. Mobiel verkeer heeft een extra <a href="https://www.techopedia.com/definition/8553/network-latency">latency</a> van <a href="https://phabricator.wikimedia.org/phame/live/7/post/83/measuring_wikipedia_page_load_times/">ongeveer 200ms</a>, waardoor websites trager worden. We weten ook dat het percentage mobiel verkeer gestaag groeit. Dit betekent dat nu al MEER DAN 50% niet binnen 3 seconden laadt (en dus bezoekers verliest). Als gevolg van de percentuele toename van mobiel verkeer zal dat aantal alleen maar toenemen.</p>
+
+<h2 id="een-betere-ranking">Een betere ranking</h2>
+
+<p>Trage websites hebben nog een probleem: Ze komen mogelijk niet eens op die eerste pagina of positie in Google. Google <a href="https://yoast.com/site-speed-tools-suggestions/">bestraft</a> trage websites. Dat doen ze al <a href="https://searchengineland.com/google-says-page-speed-ranking-factor-use-mobile-page-speed-mobile-sites-upcoming-months-250874">sinds 2010</a>. Vanaf <a href="https://searchengineland.com/google-speed-update-page-speed-will-become-ranking-factor-mobile-search-289904">juli 2018</a> zal snelheid bovendien ook een ‘ranking factor’ worden bij mobiele zoekopdrachten. Daarom is het verbeteren van de snelheid van je website een goede zoekmachine optimalisatie voor alle platformen.</p>
+
+<h2 id="meer-conversie">Meer conversie</h2>
+
+<p>Voorbeelden <a href="https://blog.hubspot.com/marketing/page-load-time-conversion-rates">tonen aan</a> dat snelle websites een betere conversie hebben dan trage websites. Op een snelle website zullen <a href="https://blog.radware.com/applicationdelivery/wpo/2014/04/web-page-speed-affect-conversions-infographic/">significant meer</a> bezoekers een bestelformulier invullen, contactgegevens achterlaten of zich inschrijven voor een nieuwsbrief. Je website sneller maken kan gemakkelijk een <a href="http://www.webperformancetoday.com/2010/07/01/the-best-graphs-of-velocity/">20% conversietoename</a> veroorzaken.</p>
+
+<h2 id="verbeterde-ux">Verbeterde UX</h2>
+
+<p>Trage websites maken bezoekers boos en gefrustreerd. Dat negatieve gevoel wordt vervolgens <a href="https://velocitize.com/2017/03/27/how-site-speed-impacts-your-seo-and-ux/">geassocieerd</a> met je merk. Mensen <a href="https://www.nngroup.com/articles/website-response-times/">onthouden</a> een trage website. Een snelle website, daarentegen, betekent een betere beleving en <a href="https://www.nngroup.com/articles/website-response-times/">meer interactie</a>. Snellere pagina’s zorgen voor een betere UX.</p>
+
+<h2 id="snelheid-is-belangrijk">Snelheid is belangrijk</h2>
+
+<p>Zoals je ziet is snelheid een grote factor in het succes van je website. Je website zal beter scoren in de zoekmachine, meer bezoekers en conversie hebben en zorgen voor een betere klantbeleving. De waarde van je website is direct gerelateerd aan de snelheid ervan. <a href="https://www.youtube.com/watch/OlbJKOWEPEM">Snelheid is belangrijk.</a></p>
+
+<h2 id="een-real-life-voorbeeld">Een real-life voorbeeld</h2>
+
+<p>Laten we eens kijken naar een responsive retina-ready one-page website, met custom lettertypes, veel afbeeldingen en javascript, die er zo uitziet:</p>
+
+<p><img src="/uploads/speedexample_small.jpg" alt="" /></p>
+
+<p>Deze pagina is slechts 1 megabyte groot en laadt in <a href="https://gtmetrix.com/reports/pink-fjord.cloudvent.net/trXljyaE">0.6 seconds</a>, volgens <a href="https://gtmetrix.com/">GT Metrix</a>. Weet dat dit betekent dat het toch nog 4 seconden duurt over een 3G verbinding, volgens <a href="https://testmysite.withgoogle.com/intl/gb-int">Google mobile speed tester for 3G</a>. Gelukkig hebben de meeste mensen tegenwoordig 4G, maar het toont wel aan dat een website niet snel snel genoeg is.</p>
+
+<h2 id="snelheid-testen-en-optimaliseren">Snelheid testen en optimaliseren</h2>
+
+<p>Je kunt waardevolle adviezen krijgen van onafhankelijke snelheidsanalysetools, zoals <a href="https://gtmetrix.com/">GT Metrix</a>, <a href="https://developers.google.com/web/tools/lighthouse/">Google Lighthouse</a> en <a href="https://testmysite.withgoogle.com/intl/gb-int">Google mobile speed tester for 3G</a>. Niet alleen laten ze zien hoe snel je site is, ze vertellen je ook precies hoe je je website sneller moet maken. Heb je meer hulp nodig? Aarzel niet en <a href="/contact">stel je vraag</a>.</p>
+
+</div>
+
+
+
+<div id="title" class="showmobile">Usecue <span>&nbsp;web development</span></div>
+</div></td></tr></table>
+	</div>
+	
+	<div id="menu"><table cellpadding="0" cellspacing="0"><tr><td><div id="content">
+		    <a href="/">home.</a><br />
+		    <a href="/over-mij/">over mij.</a><br />
+		    <a href="/portfolio/">portfolio.</a><br />
+		    <a href="/blog/">blog.</a><br />
+		    <a href="/contact/">contact.</a><br />		
+	</div></td></tr></table></div>
+</div>
+<div id="controls" class="showdesktop post">
+	<div id="innercontrols">
+		<a href="#" onclick="menu();" id="openmenu"><img src="/img/menu2.png" class="black" alt="menu" /><img src="/img/menu.png" class="white" alt="menu" /></a>
+		<a href="#" onclick="menu();" id="closemenu"><img src="/img/close2.png" class="black" alt="close" /><img src="/img/close.png" class="white" alt="close" /></a>
+		
+    <a href="#" onclick="prev();"><img src="/img/back2.png" alt="previous" class="black" /><img src="/img/back.png" alt="previous" class="white" /></a>
+		<a href="#" onclick="next();"><img src="/img/next2.png" alt="next" class="black" /><img src="/img/next.png" alt="next" class="white" /></a>
+    
+	</div>
+	<div id="title" class="showdesktop">Usecue <span>&nbsp;web development</span></div>
+</div>
+    <script>
+    //open external links in a new window
+    function externalLinks() {
+      for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) {
+        var b = c[a];
+        b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank")
+      }
+    }
+    externalLinks();
+    </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1168883-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script src="/js/particles.min.js"></script>
+
+</body>
+
+</html>
