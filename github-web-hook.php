@@ -1,5 +1,6 @@
 <?php
 
+
 if (validate()) {
     $dir = __DIR__;
     $output = shell_exec("git -C {$dir} pull -f 2>&1");
