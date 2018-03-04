@@ -38,7 +38,7 @@ Header set X-XSS-Protection "1; mode=block"
 
 <IfModule mod_headers.c>
 # Unset Server Signature header
-ServerSignature Off
+ServerTokens Prod
 # Unset Server Technology header
 Header unset X-Powered-By
 </IfModule>
