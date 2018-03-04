@@ -1,9 +1,9 @@
 <?php
 
 if (validate()) {
-  $gitDir = __DIR__;
-  exec("git -C {$gitDir} pull -f 2>&1", $gitOutput);
-  file_put_contents('../log/last_deploy.log', $gitOutput);
+    $dir = __DIR__;
+    $output = shell_exec("git -C {$dir} pull -f 2>&1");
+    file_put_contents('../log/last_deploy.log', $output);
 }
 
 function validate()
