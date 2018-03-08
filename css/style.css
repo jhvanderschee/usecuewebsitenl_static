@@ -74,14 +74,14 @@ body .home2 #particles-js {background: url('../img/fox2.jpg') 40% center !import
 body.menu #menu {opacity: 1;}
 body #menu #content {text-align: center;}
 body #menu #content a {color: white; text-decoration: none;}
-#page #menu table td, table td {
+#page #menu .table .td, .table .td {
     padding: 40px 0 40px 0; vertical-align: middle;
     text-align: center;
 }
 
 
-.post #innerpage table td,
-.blog #innerpage table td {background: white;}
+.post #innerpage .table .td,
+.blog #innerpage .table .td {background: white;}
 [class^='home'] p {text-align: center; font-size: 19px; line-height: 1.5em; font-weight: 300;}
 #page {height: 100%; opacity: 0;
     -webkit-transition: opacity 0.4s ease;                  
@@ -96,12 +96,15 @@ body #menu #content a {color: white; text-decoration: none;}
 	position: relative; right: 0;
 	color: white;
 }
-table, td {width: 100%; height: 100%; 
+.table, .tr, .td {width: 100%; height: 100%; 
     background-position: center center;
     background-repeat: no-repeat; 
     background-size: cover;
     position: relative;
 }
+.table {display: table;}
+.tr {display: table-row;}
+.td {display: table-cell;}
 #loading {margin-left: 500px; position: absolute; margin-top: -220px;}
 #textcell, #imgoverlay, iframe {opacity: 0;
     -webkit-transition: opacity .5s ease;                  
@@ -111,29 +114,29 @@ table, td {width: 100%; height: 100%;
     transition: opacity .5s ease; 
 }
 #loading {opacity: 1;}
-#page.portfolio #innerpage table td .col50 {
+#page.portfolio #innerpage .table .td .col50 {
     width: auto;
     line-height: 1.6em;
     padding: 0;
     display: inline-block;
     vertical-align: middle;
 }
-#page.portfolio #innerpage table td .col50:nth-child(2) {
+#page.portfolio #innerpage .table .td .col50:nth-child(2) {
     width: auto;
 }
-#page.portfolio #innerpage table td .col50:nth-child(3) {
+#page.portfolio #innerpage .table .td .col50:nth-child(3) {
     width: 300px;
 }
-#page.portfolio #innerpage table td td {text-align: left; width: 100%;}
-#page.portfolio #innerpage table td #bezel {
+#page.portfolio #innerpage .table .td .td {text-align: left; width: 100%;}
+#page.portfolio #innerpage .table .td #bezel {
     margin: 71px 0 0 385px;
     position: absolute; z-index: 0;
     height: 300px;
     width: 12px;
     background: white;
 }
-#page.portfolio #innerpage table td .desktop {margin: 71px 0 0 43px; position: absolute; z-index: 0; width: 500px; height: 267px; overflow: hidden;}
-#page.portfolio #innerpage table td .desktop iframe {
+#page.portfolio #innerpage .table .td .desktop {margin: 71px 0 0 43px; position: absolute; z-index: 0; width: 500px; height: 267px; overflow: hidden;}
+#page.portfolio #innerpage .table .td .desktop iframe {
     border: 0;
     width: 1366px;
     height: 768px;
@@ -146,8 +149,8 @@ table, td {width: 100%; height: 100%;
     -webkit-transform: scale(0.348);
     -webkit-transform-origin: 0 0;
 }
-#page.portfolio #innerpage table td .mobile {margin: 55px 0 0 397px; position: absolute; z-index: 0; width: 175px; height: 305px; overflow: hidden;}
-#page.portfolio #innerpage table td .mobile iframe {
+#page.portfolio #innerpage .table .td .mobile {margin: 55px 0 0 397px; position: absolute; z-index: 0; width: 175px; height: 305px; overflow: hidden;}
+#page.portfolio #innerpage .table .td .mobile iframe {
     border: 0;
     width: 375px;
     height: 667px;
@@ -160,7 +163,7 @@ table, td {width: 100%; height: 100%;
     -webkit-transform: scale(0.457);
     -webkit-transform-origin: 0 0;
 }
-#page.portfolio #innerpage table td .mobile.width450 iframe {
+#page.portfolio #innerpage .table .td .mobile.width450 iframe {
     width: 450px;
     height: 801px;
     -ms-zoom: 0.38;
@@ -168,10 +171,10 @@ table, td {width: 100%; height: 100%;
     -o-transform: scale(0.38);
     -webkit-transform: scale(0.38);
 }
-#page.portfolio #innerpage table td #content {color: white; display: inline-block; font-weight: 300; margin-right: 180px; text-align: center;}
-#page.portfolio #innerpage table td #content * {text-align: left;}
-#page.portfolio #innerpage table td #content img {position: relative; right: 70px;width: 650px;}
-#page.portfolio #innerpage table td #content h1 {width: 324px; text-align: left; line-height: 1em;}
+#page.portfolio #innerpage .table .td #content {color: white; display: inline-block; font-weight: 300; margin-right: 180px; text-align: center;}
+#page.portfolio #innerpage .table .td #content * {text-align: left;}
+#page.portfolio #innerpage .table .td #content img {position: relative; right: 70px;width: 650px;}
+#page.portfolio #innerpage .table .td #content h1 {width: 324px; text-align: left; line-height: 1em;}
 
 #backgroundtriangle {
   position: absolute; 
@@ -335,7 +338,7 @@ a {color: black;}
 
 
 @media screen and (max-width: 1329px) {
-  #page.portfolio #innerpage table td .col50:nth-child(2) {
+  #page.portfolio #innerpage .table .td .col50:nth-child(2) {
     -ms-transform: scale(0.5); /* IE 9 */
     -webkit-transform: scale(0.5); /* Safari */
     transform: scale(0.5);
@@ -346,7 +349,7 @@ a {color: black;}
     margin-top: 70px;
     margin-left: 50px;
   }
-  #page.portfolio #innerpage table td .col50:nth-child(3) {
+  #page.portfolio #innerpage .table .td .col50:nth-child(3) {
     margin-left: 390px;
   }
   #loading {
@@ -368,9 +371,9 @@ a {color: black;}
     -moz-column-count: 1;
     column-count: 1;
   }
-  table table {max-width: calc(100% - 30px); overflow: hidden; position: absolute;}
-  #page.portfolio #innerpage table td table td {display: block;}
-  #page.portfolio #innerpage table td .col50:nth-child(2) {
+  .table .table {max-width: calc(100% - 30px); overflow: hidden; position: absolute;}
+  #page.portfolio #innerpage .table .td .table .td {display: block;}
+  #page.portfolio #innerpage .table .td .col50:nth-child(2) {
     -ms-transform: scale(0.5); /* IE 9 */
     -webkit-transform: scale(0.5); /* Safari */
     transform: scale(0.5);
@@ -381,23 +384,23 @@ a {color: black;}
     margin-top: 0px;
     margin-left: 0px;
   }
-  #page.portfolio #innerpage table td .col50:nth-child(3) {
+  #page.portfolio #innerpage .table .td .col50:nth-child(3) {
     padding-top: 250px;
     max-width: 300px;
     margin-left: 0px;
   }
-  table, td, #innerpage {min-height: 100vh;}
+  .table, .td, #innerpage {min-height: 100%;}
    #content {padding: 0 110px 0 120px;}
    .post #content > div > * {max-width: 100%;}
-   #page.portfolio #innerpage table td #content {margin-right: 0px;}
+   #page.portfolio #innerpage .table .td #content {margin-right: 0px;}
 }
 
 
 @media screen and (max-width: 600px) {
 
-#page.portfolio #innerpage table td #content h1,
-#page.portfolio #innerpage table td .col50 {max-width: 100%!important; width: 100%!important;}
-table table, table table td, table table tbody, table table tr {height: auto; display: block;}
+#page.portfolio #innerpage .table .td #content h1,
+#page.portfolio #innerpage .table .td .col50 {max-width: 100%!important; width: 100%!important;}
+.table .table, .table .table .td, .table .table tbody, .table .table tr {height: auto; display: block;}
 [class^='home'] h1 {font-size: 62px; font-weight: 900; letter-spacing: 1px; line-height: 1em;}
 [class^='home'] p {text-align: left;}
 #content {padding: 0 15px; display: block;}
@@ -437,8 +440,8 @@ table table, table table td, table table tbody, table table tr {height: auto; di
 .portfolio #innercontrols a:nth-child(3),
 .portfolio #innercontrols a:nth-child(4) {display: inline-block; position: relative; bottom: 3px;}
 #innercontrols a:nth-child(2) {position: absolute; z-index: 999;}
-table td {vertical-align: top; padding: 10px 0 20px 0;}
-#page #menu table td {vertical-align: middle;}
+.table .td {vertical-align: top; padding: 10px 0 20px 0;}
+#page #menu .table .td {vertical-align: middle;}
 h1 {text-align: left;}
 .blog h1:after, .post h1:after, .text h1:after {margin-left: 0;}
 body [class^='home'] #innerpage {background: white!important; color: black!important;}
@@ -449,6 +452,6 @@ body [class^='home'] #innerpage {background: white!important; color: black!impor
     line-height: 1.6em;
     font-weight: 300;
 }
-#innerpage > table tr td {text-align: left;}
-#page {height: auto; min-height: 100vh;}
+#innerpage > .table tr .td {text-align: left;}
+#page {height: auto; min-height: 100%;}
 }

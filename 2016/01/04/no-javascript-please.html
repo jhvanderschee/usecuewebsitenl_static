@@ -34,6 +34,8 @@
 <meta name="twitter:url" content="https://www.usecue.nl/2016/01/04/no-javascript-please.html" />
 <meta name="twitter:description" content="You probably load 100k jQuery in your page, because it makes programming soooo easy. But what if you want your page to be as small as 100k? Or usable by peop..." />
 
+<link rel="publisher" href="https://plus.google.com/+UseCuewebdevelopmentAmsterdam">
+
 <link rel="canonical" href="https://www.usecue.nl/2016/01/04/no-javascript-please.html">
 <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.usecue.nl/sitemap.xml" />
 
@@ -83,15 +85,7 @@ function menu() {
 }
 $(document).ready( function() {
     $("#page").addClass("loaded");
-    setInterval(function () {
-        $("#loading span").toggle();
-    },500);
-    $('iframe').load(function(){
-        setTimeout(function () {
-            endloading();
-        }, 300)
-    });
-
+    
     
     
 
@@ -166,7 +160,7 @@ $(window).resize( function() {
 	<div id="particles-js" style="z-index:0;"></div>
     <div id="border"></div>
 	
-		<table cellpadding="0" cellspacing="0"><tr><td><div id="content">
+		<div class="table"><div class="tr"><div class="td"><div id="content">
     <div id="innercontrols" class="showmobile">
         <a href="#" onclick="menu();" id="openmenu"><img src="/img/menu2.png" alt="menu" class="black" /><img src="/img/menu.png" class="white" /></a>
         <a href="#" onclick="menu();" id="closemenu"><img src="/img/close2.png" alt="close" class="black" /><img src="/img/close.png" class="white" /></a>
@@ -197,7 +191,7 @@ $(window).resize( function() {
 
 
 <div id="title" class="showmobile">Usecue <span>&nbsp;web development</span></div>
-</div></td></tr></table>
+</div></div></div></div>
 	</div>
 	
 	<div id="menu"><table cellpadding="0" cellspacing="0"><tr><td><div id="content">
