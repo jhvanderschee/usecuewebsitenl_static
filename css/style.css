@@ -355,7 +355,7 @@ a {color: black;}
     column-count: 1;
   }
   body.portfolio .outercontent {width: 100%;}
-  body.portfolio .content {margin-left: 10px;}
+  body.portfolio .content {margin-left: 15px;}
   body.portfolio .col50:nth-child(1) {
     -ms-transform: scale(0.5); /* IE 9 */
     -webkit-transform: scale(0.5); /* Safari */
@@ -428,7 +428,7 @@ body.portfolio #innerpage .table .td .col50 {max-width: 100%!important; width: 1
 #page #menu .table .td {vertical-align: middle;}
 h1 {text-align: left;}
 .blog h1:after, .post h1:after, .text h1:after {margin-left: 0;}
-body [class^='home'] #innerpage {background: white!important; color: black!important;}
+body[class^='home'] {background: white!important; color: black!important;}
 [class^='home'] h1:after {display: block; content: ""; width: 40px; height: 3px; background: black; margin: 25px 0 10px;}
 #particles-js{ display: none;}
 [class^='home'] p {
