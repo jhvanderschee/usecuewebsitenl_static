@@ -73,13 +73,13 @@ function prev() {
 var timeout;
 function menu() {
 	clearTimeout(timeout);
-	if(document.getElementById('body').className == 'menu') {
-		document.getElementById('body').className = '';
-		timeout = setTimeout(function(){document.getElementById('menu').style.zIndex = '-5'}, 600);
+	if($('body').hasClass('menu')) {
+		$('body').removeClass('menu'); 
+		timeout = setTimeout(function(){$('#menu').css('z-index','-5');}, 600);
 	}
 	else {
-		document.getElementById('menu').style.zIndex = '5'
-		document.getElementById('body').className = 'menu'; 
+		$('#menu').css('z-index','5')
+		$('body').addClass('menu'); 
 	}
 	return false;
 }
@@ -154,13 +154,12 @@ $(window).resize( function() {
 </script>
 </head>
 
-<body id="body">
-<div id="page" class="post">
-	<div id="innerpage" style="background-color: ;">
-	<div id="particles-js" style="z-index:0;"></div>
-    <div id="border"></div>
+<body id="body" style="background-color: ;" class="post">
+	<div id="particles-js"></div>
 	
-		<div class="table"><div class="tr"><div class="td"><div id="content">
+    
+    <div class="outercontent"><div class="content">
+        
     <div id="innercontrols" class="showmobile">
         <a href="#" onclick="menu();" id="openmenu"><img src="/img/menu2.png" alt="menu" class="black" /><img src="/img/menu.png" class="white" /></a>
         <a href="#" onclick="menu();" id="closemenu"><img src="/img/close2.png" alt="close" class="black" /><img src="/img/close.png" class="white" /></a>
@@ -169,6 +168,8 @@ $(window).resize( function() {
         <a href="#" onclick="next();"><img src="/img/next2.png" alt="next" class="black" /><img src="/img/next.png" class="white" /></a>
         
     </div>
+
+    <div class="innercontent">
 
 <h3>16.02.2017</h3>
 <h1>Security & Awareness 2017</h1>
@@ -200,17 +201,17 @@ $(window).resize( function() {
 
 
 <div id="title" class="showmobile">Usecue <span>&nbsp;web development</span></div>
-</div></div></div></div>
-	</div>
-	
-	<div id="menu"><div class="table"><div class="tr"><div class="td"><div id="content">
+
+</div></div></div>
+
+	<div id="menu"><div class="outercontent"><div class="content">
 		    <a href="/">home.</a><br />
 		    <a href="/over-mij/">over mij.</a><br />
 		    <a href="/portfolio/">portfolio.</a><br />
 		    <a href="/blog/">blog.</a><br />
 		    <a href="/contact/">contact.</a><br />		
-	</div></div></div></div></div>
-</div>
+	</div></div></div>
+
 <div id="controls" class="showdesktop post">
 	<div id="innercontrols">
 		<a href="#" onclick="menu();" id="openmenu"><img src="/img/menu2.png" class="black" alt="menu" /><img src="/img/menu.png" class="white" alt="menu" /></a>
