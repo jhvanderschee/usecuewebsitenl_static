@@ -267,8 +267,10 @@ body.menu img.black {display: none;}
     font-size: 23px!important;
 }
 #title span {font-weight: 300; font-size: 22px;}
+.home2 .innercontent, .home2 .innercontent a, 
 .home2 #title,
 .portfolio #title {color: white;}
+.home2 .innercontent a {border-bottom: 1px solid rgba(255,255,255,0.4);}
 body.menu #title {color: white;}
 #pagenumber {display: none; position: absolute; bottom: 40px;}
 #title.showdesktop {display: block;}
@@ -438,4 +440,6 @@ body[class^='home'] {background: white!important; color: black!important;}
 }
 #innerpage > .table tr .td {text-align: left;}
 #page {height: auto; min-height: 100%;}
+.home2 .innercontent, .home2 .innercontent a {color: black;}
+.home2 .innercontent a {border-bottom: 1px solid silver;}
 }
