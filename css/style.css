@@ -58,7 +58,7 @@ body #menu {
     z-index: -5; 
     color: white; 
     font-size: 50px; 
-    font-weight: 900!important; 
+    font-weight: 900; 
     letter-spacing: 1px; 
     line-height: 1.4em;
     width: 100%;
@@ -172,15 +172,15 @@ body.portfolio .content h1 {width: 324px; text-align: left; line-height: 1em;}
   border-right: 200px solid transparent;
 }
 
-.content {display: inline-block; vertical-align: middle; margin: 0 auto; text-align: left; max-width: 1050px; padding: 0 100px 0 100px; text-align: left; white-space: normal;}
-.outercontent {height: 100%; text-align: center; white-space: nowrap;}
-.outercontent:before {
+.content, body #menu .content {display: inline-block; vertical-align: middle; margin: 0 auto; text-align: left; max-width: 1050px; padding: 0 100px 0 120px; text-align: left; white-space: normal;}
+.outercontent, body #menu .outercontent {height: 100%; text-align: center; white-space: nowrap;}
+.outercontent:before, body #menu .outercontent:before {
     content: '';
     display: inline-block;
     height: 90%;
     vertical-align: middle;
-    margin-right: -0.25em; /* Adjusts for spacing */
 }
+body #menu .content {padding: 45px 0!important; text-align: center; font-weight: 900;}
 .innercontent {padding: 45px 0;}
 h1 {text-align: center; font-weight: 900; font-size: 62px; line-height: 1em; padding-bottom: 20px; text-transform: lowercase;}
 h3 {text-align: left; padding-bottom: 10px; line-height: 1.5em;}
