@@ -102,9 +102,7 @@ body #menu #content a {color: white; text-decoration: none;}
     background-size: cover;
     position: relative;
 }
-.table {display: table;}
-.tr {display: table-row;}
-.td {display: table-cell;}
+
 #loading {margin-left: 500px; position: absolute; margin-top: -220px;}
 #textcell, #imgoverlay, iframe {opacity: 0;
     -webkit-transition: opacity .5s ease;                  
