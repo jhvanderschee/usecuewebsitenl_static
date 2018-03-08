@@ -45,29 +45,21 @@
 
 <script>
 function next() {
-	if(document.getElementById('body').className == 'menu') {
-		document.getElementById('body').className = '';
+	if($('body').hasClass('menu')) {
+		$('body').removeClass('menu');
 		setTimeout(function(){next()}, 400);
 		return false;
 	}
-	document.getElementById('controls').style.display = 'none'; 
-	document.getElementById('innerpage').className = 'next'; 
-	setTimeout(function(){
-		document.location.href='/2015/05/30/the-viewport-meta-tag-on-desktop.html';
-	}, 350);
+	document.location.href='/2015/05/30/the-viewport-meta-tag-on-desktop.html';
 	return false;
 }
 function prev() {
-	if(document.getElementById('body').className == 'menu') {
-		document.getElementById('body').className = '';
+	if($('body').hasClass('menu')) {
+		$('body').removeClass('menu');
 		setTimeout(function(){prev()}, 400);
 		return false;
 	}
-	document.getElementById('controls').style.display = 'none'; 
-	document.getElementById('innerpage').className = 'prev'; 
-	setTimeout(function(){
-		document.location.href='/2015/11/04/why-static-website-generators-are-the-next-big-thing.html';
-	}, 350);
+	document.location.href='/2015/11/04/why-static-website-generators-are-the-next-big-thing.html';
 	return false;
 }
 var timeout;
