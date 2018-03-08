@@ -46,7 +46,7 @@
 img {border: 0;}
 strong, b {font-weight: 700;}
 
-body, html {height: 100%; overflow-x: hidden;}
+body, html {height: 100%;}
 body {font-family: 'Roboto', sans-serif; font-weight: 400; font-size: 15px; line-height: 1.3em; background: #fff;}
 
 body #menu {
