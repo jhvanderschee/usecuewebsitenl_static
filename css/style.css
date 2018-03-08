@@ -150,7 +150,7 @@ body.portfolio .mobile.width450 iframe {
     -o-transform: scale(0.38);
     -webkit-transform: scale(0.38);
 }
-body.portfolio .content {color: white; font-weight: 300; margin-right: 180px; text-align: center;}
+body.portfolio .content {color: white; font-weight: 300; margin-left: -90px; text-align: center;}
 body.portfolio .content * {text-align: left;}
 body.portfolio .content img {position: relative; right: 70px;width: 650px;}
 body.portfolio .content h1 {width: 324px; text-align: left; line-height: 1em;}
@@ -320,6 +320,7 @@ a {color: black;}
 
 
 @media screen and (max-width: 1329px) {
+  body.portfolio .content {padding: 0;}
   body.portfolio .col50:nth-child(1) {
     -ms-transform: scale(0.5); /* IE 9 */
     -webkit-transform: scale(0.5); /* Safari */
@@ -354,6 +355,7 @@ a {color: black;}
     column-count: 1;
   }
   body.portfolio .outercontent {width: 100%;}
+  body.portfolio .content {margin-left: 10px;}
   body.portfolio .col50:nth-child(1) {
     -ms-transform: scale(0.5); /* IE 9 */
     -webkit-transform: scale(0.5); /* Safari */
@@ -371,14 +373,13 @@ a {color: black;}
     width: 100%;
   }
   body.portfolio .col50:nth-child(2) > * {max-width: 300px;}
-   .content {padding: 0 110px 0 120px;}
+   .content {padding: 0 100px 0 120px;}
    .post .content > div > * {max-width: 100%;}
-   body.portfolio .content {margin-right: 0px;}
 }
 
 
 @media screen and (max-width: 600px) {
-
+body.portfolio .content {margin-left: 0px;}
 body.portfolio #innerpage .table .td .content h1,
 body.portfolio #innerpage .table .td .col50 {max-width: 100%!important; width: 100%!important;}
 .table .table, .table .table .td, .table .table tbody, .table .table tr {height: auto; display: block;}
@@ -386,7 +387,7 @@ body.portfolio #innerpage .table .td .col50 {max-width: 100%!important; width: 1
 [class^='home'] p {text-align: left;}
 .outercontent {display: block;}
 .outercontent:before {content: none;}
-.content {padding: 0 15px; display: block;}
+.content {padding: 0 15px!important; display: block;}
 .content > div {text-align: left!important;}
 .showmobile {display: initial;}
 .showdesktop {display: none;}
