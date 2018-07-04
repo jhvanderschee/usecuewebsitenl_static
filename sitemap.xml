@@ -43,15 +43,7 @@
   
   
       <url>
-        <loc>https://www.usecue.nl/portfolio/</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-       </url>
-  
-  
-  
-      <url>
-        <loc>https://www.usecue.nl/contact/</loc>
+        <loc>https://www.usecue.nl/blog/</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
@@ -67,7 +59,15 @@
   
   
       <url>
-        <loc>https://www.usecue.nl/blog/</loc>
+        <loc>https://www.usecue.nl/portfolio/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+       </url>
+  
+  
+  
+      <url>
+        <loc>https://www.usecue.nl/contact/</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
