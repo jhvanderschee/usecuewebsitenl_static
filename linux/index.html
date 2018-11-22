@@ -5,9 +5,9 @@
 <html lang="nl">
 <head>
 <meta charset="utf-8" /> 
-<title>Blog. | Usecue web development</title>
+<title>usecue web development | Usecue web development</title>
 
-<meta name="description" content="Dit blog beschrijft mijn technische bevindingen, nieuwtjes en meningen over web development. Het gaat vaak om een ‘best-practise’ of ontdekking die ik de moe...">
+<meta name="description" content="Ik ben web developer. Ik maak elegante, zelfgeprogrammeerde websites voor mijn klanten. Meer weten?">
 
 <link rel="shortcut icon" type="image/png" href="/img/icon-196x196.png" />
 <link rel="shortcut icon" sizes="196x196" href="/img/icon-196x196.png" />
@@ -16,28 +16,28 @@
 <meta id="viewport" name="viewport" content="width=device-width">
 
 <!-- Facebook and Twitter integration -->
-<meta property="og:title" content="Blog."/>
+<meta property="og:title" content="usecue web development"/>
 
-<meta property="og:url" content="https://www.usecue.nl/blog/"/>
+<meta property="og:url" content="https://www.usecue.nl/linux/"/>
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://www.usecue.nl"/>
 <meta property="og:site_name" content="Usecue web development"/>
-<meta property="og:description" content="Dit blog beschrijft mijn technische bevindingen, nieuwtjes en meningen over web development. Het gaat vaak om een ‘best-practise’ of ontdekking die ik de moe..."/>
+<meta property="og:description" content="Ik ben web developer. Ik maak elegante, zelfgeprogrammeerde websites voor mijn klanten. Meer weten?"/>
 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@jhvanderschee">
-<meta name="twitter:title" content="Blog." />
+<meta name="twitter:title" content="usecue web development" />
 
-<meta name="twitter:url" content="https://www.usecue.nl/blog/" />
-<meta name="twitter:description" content="Dit blog beschrijft mijn technische bevindingen, nieuwtjes en meningen over web development. Het gaat vaak om een ‘best-practise’ of ontdekking die ik de moe..." />
+<meta name="twitter:url" content="https://www.usecue.nl/linux/" />
+<meta name="twitter:description" content="Ik ben web developer. Ik maak elegante, zelfgeprogrammeerde websites voor mijn klanten. Meer weten?" />
 
 <link rel="publisher" href="https://plus.google.com/+UseCuewebdevelopmentAmsterdam">
 
-<link rel="canonical" href="https://www.usecue.nl/blog/">
+<link rel="canonical" href="https://www.usecue.nl/linux/">
 <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.usecue.nl/sitemap.xml" />
 
 <script src="/js/jquery-1.7.2.min.js"></script>
-
+<script src="/js/typed.min.js"></script>
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 
 <script>
@@ -76,11 +76,19 @@ $(document).ready( function() {
     $("#page").addClass("loaded");
     
     
+    if($(window).width()>600) $(".element").typed({
+    	strings: ["Ik ben ^100Linux fan.^1000", "Ik ben ^200UX expert.^2000", "Ik ben ^200programmeur.^1000", "Ik ben ^200web developer.^500"],
+        typeSpeed: 20,
+        callback: function(){ $(".typed-cursor").css('visibility','hidden');}
+    });
+    
     
 
     $(window).resize();
 
     
+particlesJS("particles-js", {"particles":{"number":{"value":400,"density":{"enable":true,"value_area":800}},"color":{"value":"#fff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":true,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":10,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":false,"distance":500,"color":"#ffffff","opacity":0.4,"width":2},"move":{"enable":true,"speed":6,"direction":"bottom","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":false,"mode":"bubble"},"onclick":{"enable":false,"mode":"repulse"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":0.5}},"bubble":{"distance":400,"size":4,"duration":0.3,"opacity":1,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
+	
 
 });
 
@@ -143,7 +151,7 @@ $(window).resize( function() {
 </script>
 </head>
 
-<body id="body"  class="blog">
+<body id="body" style="background: #ffffff;" class="home">
 	<div id="particles-js"></div>
 	
     
@@ -157,13 +165,10 @@ $(window).resize( function() {
 
     <div class="innercontent">
 
-<h1>Blog.</h1>
+<h1><span class="element">Ik ben web developer.</span></h1>
 
-<div>
-Dit blog beschrijft mijn technische bevindingen, nieuwtjes en meningen over web development. Het gaat vaak om een 'best-practise' of ontdekking die ik de moeite van het delen waard vind.
-<br /><br />
-<p><span class="showdesktop">22.11.2018 - </span><a href="/blog/argumenten-voor-de-jamstack/">Argumenten voor de JAMstack</a><br /><span class="showdesktop">11.11.2018 - </span><a href="/blog/vaarwel-google/">Vaarwel Google</a><br /><span class="showdesktop">19.04.2018 - </span><a href="/blog/het-internet-is-niet-meer-gratis/">Het internet is niet meer gratis</a><br /><span class="showdesktop">13.04.2018 - </span><a href="/blog/bye-bye-facebook/">Bye bye Facebook</a><br /><span class="showdesktop">27.02.2018 - </span><a href="/blog/de-need-for-speed-op-het-web/">De 'Need for Speed' op het web</a><br /><span class="showdesktop">16.02.2017 - </span><a href="/blog/security-awareness-2017/">Security & Awareness 2017</a><br /><span class="showdesktop">11.12.2016 - </span><a href="/blog/turbolinks5-is-awesome/">Turbolinks5 is awesome</a><br /><span class="showdesktop">21.09.2016 - </span><a href="/blog/getting-started-with-jekyll/">Getting started with Jekyll</a><br /><span class="showdesktop">17.08.2016 - </span><a href="/blog/jekyll-tegen-de-rest-van-de-wereld/">Jekyll tegen de rest van de wereld</a><br /><span class="showdesktop">07.08.2016 - </span><a href="/blog/hover-is-dead/">Hover is dead</a><br /><span class="showdesktop">23.07.2016 - </span><a href="/blog/de-uitdagingen-in-interface-design/">De uitdaging&shy;en in inter&shy;face design</a><br /><span class="showdesktop">03.07.2016 - </span><a href="/blog/from-wordpress-to-cloudcannon/">From Wordpress to Cloud&shy;Cannon</a><br /><span class="showdesktop">21.04.2016 - </span><a href="/blog/two-viewports-to-rule-them-all/">Two viewports to rule them all</a><br /><span class="showdesktop">18.04.2016 - </span><a href="/blog/may-1st-reboot/">May 1st Reboot</a><br /><span class="showdesktop">04.01.2016 - </span><a href="/blog/no-javascript-please/">No Java&shy;script Please!</a><br /><span class="showdesktop">04.11.2015 - </span><a href="/blog/why-static-website-generators-are-the-next-big-thing/">Why Static Website Generators Are The Next Big Thing</a><br /><span class="showdesktop">14.08.2015 - </span><a href="/blog/the-race-to-zero-in-webhosting/">The race to zero in web&shy;hosting</a><br /><span class="showdesktop">30.05.2015 - </span><a href="/blog/the-viewport-meta-tag-on-desktop/">The viewport meta tag on desktop</a><br /><span class="showdesktop">30.05.2015 - </span><a href="/blog/flash-scaling-in-html/">Flash scaling in HTML</a><br /><span class="showdesktop">05.05.2015 - </span><a href="/blog/the-web-notifications-api/">The Web Notifications API</a><br /><span class="showdesktop">03.05.2015 - </span><a href="/blog/developing-web-applications-on-a-chromebook/">Develop&shy;ing web applica&shy;tions on a Chrome&shy;book</a><br /><span class="showdesktop">09.04.2015 - </span><a href="/blog/usecues-also-known-as-affordances/">About 'usecues', also known as affordan&shy;ces</a><br /></p>
-</div>
+<p>Ik maak elegante, zelfgeprogrammeerde websites voor mijn klanten. <a href="/over-mij/">Meer weten?</a></p>
+
 
 
 
@@ -179,7 +184,7 @@ Dit blog beschrijft mijn technische bevindingen, nieuwtjes en meningen over web 
 		    <a href="/contact/">contact.</a><br />		
 	</div></div></div>
 
-<div id="controls" class="showdesktop blog">
+<div id="controls" class="showdesktop home">
 	<div id="innercontrols">
 		<a href="#" onclick="menu();" id="openmenu"><img src="/img/menu2.png" class="black" alt="menu" /><img src="/img/menu.png" class="white" alt="menu" /></a>
 		<a href="#" onclick="menu();" id="closemenu"><img src="/img/close2.png" class="black" alt="close" /><img src="/img/close.png" class="white" alt="close" /></a>
@@ -207,7 +212,7 @@ Dit blog beschrijft mijn technische bevindingen, nieuwtjes en meningen over web 
   ga('send', 'pageview');
 
 </script>
-
+<script src="/js/particles.min.js"></script>
 <style>
     .videoWrapper {
         position: relative;
