@@ -123,21 +123,7 @@ $(window).resize( function() {
     $('#backgroundtriangle').css('height',$(window).height()+'px');
     $('#triangle-topleft').css('border-top-width',$(window).height()+'px');
     $('#backgroundtriangle').css('width',trianglewidth+'px');
-    $('#triangle-topleft').css('border-right-width',trianglewidth+'px');
-	
-    if (screen.width < 330) {
-	  document.getElementById("viewport").setAttribute("content", "width=330");
-	}
-    else { 
-      document.getElementById("viewport").setAttribute("content", "width=device-width");
-    }
-    if($(window).width()<600) {
-        $('#title').css('margin-top','45px');
-        //var extramargin = $('body').height() - ($('#content').height()-35);
-        //if (extramargin>45) $('#title').css('margin-top',extramargin+'px');
-        //else $('#title').css('margin-top','45px');
-    }
-    
+    $('#triangle-topleft').css('border-right-width',trianglewidth+'px'); 
 });
 
 </script>
@@ -186,11 +172,11 @@ $(window).resize( function() {
 
 <div id="controls" class="showdesktop post">
 	<div id="innercontrols">
-		<a href="#" onclick="menu();" id="openmenu"><img src="/img/menu2.png" class="black" alt="menu" /><img src="/img/menu.png" class="white" alt="menu" /></a>
-		<a href="#" onclick="menu();" id="closemenu"><img src="/img/close2.png" class="black" alt="close" /><img src="/img/close.png" class="white" alt="close" /></a>
+		<a onclick="menu();" id="openmenu"><img src="/img/menu2.png" class="black" alt="menu" /><img src="/img/menu.png" class="white" alt="menu" /></a>
+		<a onclick="menu();" id="closemenu"><img src="/img/close2.png" class="black" alt="close" /><img src="/img/close.png" class="white" alt="close" /></a>
 		
-    <a href="#" onclick="prev();"><img src="/img/back2.png" alt="previous" class="black" /><img src="/img/back.png" alt="previous" class="white" /></a>
-		<a href="#" onclick="next();"><img src="/img/next2.png" alt="next" class="black" /><img src="/img/next.png" alt="next" class="white" /></a>
+    <a onclick="prev();"><img src="/img/back2.png" alt="previous" class="black" /><img src="/img/back.png" alt="previous" class="white" /></a>
+		<a onclick="next();"><img src="/img/next2.png" alt="next" class="black" /><img src="/img/next.png" alt="next" class="white" /></a>
     
 	</div>
 	<div id="title" class="showdesktop">Usecue <span>&nbsp;web development</span></div>
