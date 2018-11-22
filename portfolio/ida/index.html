@@ -5,9 +5,9 @@
 <html lang="nl">
 <head>
 <meta charset="utf-8" /> 
-<title>Over mij. | Usecue web development</title>
+<title>Ida | Usecue web development</title>
 
-<meta name="description" content="Mijn naam is Joost van der Schee. In 2007 heb ik Usecue BV opgericht. Samen met mijn collega’s en klanten ontwikkel ik websites en webapplicaties, waarbij de...">
+<meta name="description" content="Website ontwikkeling, development en hosting">
 
 <link rel="shortcut icon" type="image/png" href="/img/icon-196x196.png" />
 <link rel="shortcut icon" sizes="196x196" href="/img/icon-196x196.png" />
@@ -16,23 +16,23 @@
 <meta id="viewport" name="viewport" content="width=device-width">
 
 <!-- Facebook and Twitter integration -->
-<meta property="og:title" content="Over mij."/>
-
-<meta property="og:url" content="https://www.usecue.nl/over-mij/"/>
+<meta property="og:title" content="Ida"/>
+<meta property="og:image" content="https://www.usecue.nl/uploads/stijn-te-strake-316914-unsplash.jpg"/>
+<meta property="og:url" content="https://www.usecue.nl/portfolio/ida/"/>
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Usecue web development"/>
-<meta property="og:description" content="Mijn naam is Joost van der Schee. In 2007 heb ik Usecue BV opgericht. Samen met mijn collega’s en klanten ontwikkel ik websites en webapplicaties, waarbij de..."/>
+<meta property="og:description" content="Website ontwikkeling, development en hosting"/>
 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@jhvanderschee">
-<meta name="twitter:title" content="Over mij." />
-
-<meta name="twitter:url" content="https://www.usecue.nl/over-mij/" />
-<meta name="twitter:description" content="Mijn naam is Joost van der Schee. In 2007 heb ik Usecue BV opgericht. Samen met mijn collega’s en klanten ontwikkel ik websites en webapplicaties, waarbij de..." />
+<meta name="twitter:title" content="Ida" />
+<meta name="twitter:image" content="https://www.usecue.nl/uploads/stijn-te-strake-316914-unsplash.jpg" />
+<meta name="twitter:url" content="https://www.usecue.nl/portfolio/ida/" />
+<meta name="twitter:description" content="Website ontwikkeling, development en hosting" />
 
 <link rel="publisher" href="https://plus.google.com/+UseCuewebdevelopmentAmsterdam">
 
-<link rel="canonical" href="https://www.usecue.nl/over-mij/">
+<link rel="canonical" href="https://www.usecue.nl/portfolio/ida/">
 <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.usecue.nl/sitemap.xml" />
 
 <script src="/js/jquery-1.7.2.min.js"></script>
@@ -46,7 +46,7 @@ function next() {
 		setTimeout(function(){next()}, 400);
 		return false;
 	}
-	document.location.href='/portfolio/ida/';
+	document.location.href='/portfolio/lucass-amsterdam/';
 	return false;
 }
 function prev() {
@@ -55,7 +55,7 @@ function prev() {
 		setTimeout(function(){prev()}, 400);
 		return false;
 	}
-	document.location.href='';
+	document.location.href='/portfolio/felgen-wie-neu/';
 	return false;
 }
 var timeout;
@@ -77,6 +77,15 @@ function choose(choices) {
 }
 $(document).ready( function() {
     $("#page").addClass("loaded");
+    
+    setInterval(function () {
+        $("#loading span").toggle();
+    },500);
+    $('iframe').load(function(){
+        setTimeout(function () {
+            endloading();
+        }, 300)
+    });
     
 
     
@@ -140,9 +149,9 @@ $(window).resize( function() {
 </script>
 </head>
 
-<body id="body"  class="page">
+<body id="body" style="background: #46906b;" class="portfolio">
 	<div id="particles-js"></div>
-	
+	<div id="backgroundtriangle" style="background-image: url(//images.weserv.nl/?url=www.usecue.com/uploads/stijn-te-strake-316914-unsplash.jpg&w=500&h=1000&t=squaredown);"><div id="triangle-topleft" style="border-top-color: #46906b;"></div></div>
     
     <div class="outercontent"><div class="content">
         
@@ -150,23 +159,26 @@ $(window).resize( function() {
         <a onclick="menu();" id="openmenu"><img src="/img/menu2.png" alt="menu" class="black" /><img src="/img/menu.png" class="white" /></a>
         <a onclick="menu();" id="closemenu"><img src="/img/close2.png" alt="close" class="black" /><img src="/img/close.png" class="white" /></a>
         
+        <a onclick="prev();"><img src="/img/back2.png" alt="previous" class="black" /><img src="/img/back.png" class="white" /></a>
+        <a onclick="next();"><img src="/img/next2.png" alt="next" class="black" /><img src="/img/next.png" class="white" /></a>
+        
     </div>
 
     <div class="innercontent">
 
-<h1>Over mij.</h1>
+<div class="col50">
+<div class="desktop"><iframe src="//lively-chamois.cloudvent.net" scrolling="no" style="background-color: #46906b;"></iframe></div>
+<div class="mobile" style="background-color: #46906b;"><iframe src="//lively-chamois.cloudvent.net" scrolling="no" style="background-color: #46906b;"></iframe></div>
+<div id="bezel" style="background-color: #46906b;"></div>
+<img id="imgoverlay" src="/img/devices.png" alt="devices" />
+<div id="loading">Bezig met laden..<span>.</span></div>
+</div><div class="col50" id="textcell">
+<h1>Ida</h1>
 
-<div data-cms-content-wrapper="/_layouts/page.html">
-<p>Mijn naam is Joost van der Schee. In 2007 heb ik Usecue BV opgericht. Samen met mijn collega’s en klanten ontwikkel ik websites en webapplicaties, waarbij de focus ligt op efficiëntie en kwaliteit in het ontwerp- en ontwikkelproces. Usecue is gespecialiseerd in het bouwen van maatwerkoplossingen en werkt voornamelijk voor reclamebureau’s en grafisch vormgevers.</p>
 
-<p>Ik heb industrieel ontwerpen gestudeerd aan de TUDelft en heb daarom een analytische kijk op het ontwerpproces en de mens-computer interactie.</p>
-
-<p>Ik ben Linux fan, maar ben ik ook groot fan van <a href="https://cloudcannon.com/">CloudCannon</a>, een online CMS systeem. CloudCannon heeft mij opgenomen op zijn ‘<a href="https://cloudcannon.com/experts/">experts page</a>’. Ik heb <a href="https://jekyllcodex.org">jekyllcodex.org</a> ontwikkeld en ik heb meer dan 400 duizend mensen bereikt met antwoorden op Jekyll-gerelateerde vragen op Stack Overflow. Naast Jekyll/CloudCannon websites ontwikkel ik o.a. WordPress-, Issuu-, MailChimp- en Shopify oplossingen. Tenslotte heb ik ook een eigen platform ontwikkeld voor het produceren van online magazines, genaamd ‘<a href="https://withoutcoding.com">Without Coding</a>’.</p>
-
-<p>Ben je nieuwsgierig geworden? Wil jij kwaliteit tegen een scherpe prijs? Neem dan <a href="/contact">contact</a> op! Ik vertel je graag wat ik voor je kan betekenen.</p>
-
+<br />
+<a href="//lively-chamois.cloudvent.net" target="_blank" class="btn">bekijk website</a>
 </div>
-
 
 
 <div id="title" class="showmobile">Usecue <span>&nbsp;web development</span></div>
@@ -181,11 +193,14 @@ $(window).resize( function() {
 		    <a href="/contact/">contact.</a><br />		
 	</div></div></div>
 
-<div id="controls" class="showdesktop page">
+<div id="controls" class="showdesktop portfolio">
 	<div id="innercontrols">
 		<a onclick="menu();" id="openmenu"><img src="/img/menu2.png" class="black" alt="menu" /><img src="/img/menu.png" class="white" alt="menu" /></a>
 		<a onclick="menu();" id="closemenu"><img src="/img/close2.png" class="black" alt="close" /><img src="/img/close.png" class="white" alt="close" /></a>
 		
+    <a onclick="prev();"><img src="/img/back2.png" alt="previous" class="black" /><img src="/img/back.png" alt="previous" class="white" /></a>
+		<a onclick="next();"><img src="/img/next2.png" alt="next" class="black" /><img src="/img/next.png" alt="next" class="white" /></a>
+    
 	</div>
 	<div id="title" class="showdesktop">Usecue <span>&nbsp;web development</span></div>
 </div>
