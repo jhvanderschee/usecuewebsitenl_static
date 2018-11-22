@@ -133,6 +133,14 @@ $(window).resize( function() {
     $('#triangle-topleft').css('border-top-width',$(window).height()+'px');
     $('#backgroundtriangle').css('width',trianglewidth+'px');
     $('#triangle-topleft').css('border-right-width',trianglewidth+'px'); 
+
+    if (screen.width < 330) {
+	  document.getElementById("viewport").setAttribute("content", "width=330");
+	}
+    else { 
+      document.getElementById("viewport").setAttribute("content", "width=device-width");
+    }
+
 });
 
 </script>
