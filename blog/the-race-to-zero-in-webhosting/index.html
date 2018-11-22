@@ -71,6 +71,10 @@ function menu() {
 	}
 	return false;
 }
+function choose(choices) {
+    var index = Math.floor(Math.random() * choices.length);
+    return choices[index];
+}
 $(document).ready( function() {
     $("#page").addClass("loaded");
     
