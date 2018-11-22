@@ -85,6 +85,12 @@
   
   
       <url>
+        <loc>https://www.usecue.nl/2018/11/22/argumenten-voor-de-jamstack.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+       </url>
+  
+      <url>
         <loc>https://www.usecue.nl/2018/11/11/vaarwel-google.html</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
