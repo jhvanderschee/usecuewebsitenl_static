@@ -146,9 +146,9 @@ $(window).resize( function() {
     
     <div class="outercontent"><div class="content">
         
-    <div id="innercontrols" class="showmobile">
-        <a onclick="menu();" id="openmenu"><img src="/img/menu2.png" alt="menu" class="black" /><img src="/img/menu.png" class="white" /></a>
-        <a onclick="menu();" id="closemenu"><img src="/img/close2.png" alt="close" class="black" /><img src="/img/close.png" class="white" /></a>
+    <div class="innercontrols showmobile">
+        <a onclick="menu();" class="openmenu"><img src="/img/menu2.png" alt="menu" class="black" /><img src="/img/menu.png" class="white" /></a>
+        <a onclick="menu();" class="closemenu"><img src="/img/close2.png" alt="close" class="black" /><img src="/img/close.png" class="white" /></a>
         
         <a onclick="prev();"><img src="/img/back2.png" alt="previous" class="black" /><img src="/img/back.png" class="white" /></a>
         <a onclick="next();"><img src="/img/next2.png" alt="next" class="black" /><img src="/img/next.png" class="white" /></a>
@@ -175,28 +175,30 @@ $(window).resize( function() {
 
 
 
-<div id="title" class="showmobile">Usecue <span>&nbsp;web development</span></div>
+<div class="title showmobile">Usecue <span>&nbsp;web development</span></div>
 
 </div></div></div>
 
 	<div id="menu"><div class="outercontent"><div class="content">
-		    <a href="/">home.</a><br />
+		    <a href="/" style="margin-top: 33px; display: inline-block;">home.</a><br />
 		    <a href="/over-mij/">over mij.</a><br />
 		    <a href="/portfolio/">portfolio.</a><br />
 		    <a href="/blog/">blog.</a><br />
-		    <a href="/contact/">contact.</a><br />		
+        <a href="/contact/">contact.</a><br />		
+        
+        <span style="font-size: 30%;"><a href="https://www.usecue.com/">EN</a> | <a href="https://www.usecue.nl/">NL</a></span>
 	</div></div></div>
 
 <div id="controls" class="showdesktop post">
 	<div id="innercontrols">
-		<a onclick="menu();" id="openmenu"><img src="/img/menu2.png" class="black" alt="menu" /><img src="/img/menu.png" class="white" alt="menu" /></a>
-		<a onclick="menu();" id="closemenu"><img src="/img/close2.png" class="black" alt="close" /><img src="/img/close.png" class="white" alt="close" /></a>
+		<a onclick="menu();" class="openmenu"><img src="/img/menu2.png" class="black" alt="menu" /><img src="/img/menu.png" class="white" alt="menu" /></a>
+		<a onclick="menu();" class="closemenu"><img src="/img/close2.png" class="black" alt="close" /><img src="/img/close.png" class="white" alt="close" /></a>
 		
     <a onclick="prev();"><img src="/img/back2.png" alt="previous" class="black" /><img src="/img/back.png" alt="previous" class="white" /></a>
 		<a onclick="next();"><img src="/img/next2.png" alt="next" class="black" /><img src="/img/next.png" alt="next" class="white" /></a>
     
 	</div>
-	<div id="title" class="showdesktop">Usecue <span>&nbsp;web development</span></div>
+	<div class="title showdesktop">Usecue <span>&nbsp;web development</span></div>
 </div>
     <script>
     //open external links in a new window
