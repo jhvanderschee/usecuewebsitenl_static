@@ -73,8 +73,8 @@ body #menu {
     transition: opacity 0.4s ease, left 0.6s ease;
 }
 
+body.home #particles-js {background: url('../img/linux.webp') 90% center !important; background-size: cover!important; height: calc(100% - 4px);}
 .no-webp body.home #particles-js {background: url('../img/linux.png') 90% center !important; background-size: cover!important; height: calc(100% - 4px);}
-.webp body.home #particles-js {background: url('../img/linux.webp') 90% center !important; background-size: cover!important; height: calc(100% - 4px);}
 body.home.firefox #particles-js {background: url('../img/firefox.jpg') 40% center !important; background-size: cover!important; height: 100%;}
 body.home.datacenter #particles-js {background: url('../img/datacenter.jpg') 90% center !important; background-size: cover!important; height: 100%;}
 
