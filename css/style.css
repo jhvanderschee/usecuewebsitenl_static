@@ -43,7 +43,6 @@
 
   
 * {margin: 0; padding: 0;}
-body * {opacity: 1;}
 img {border: 0;}
 strong, b {font-weight: 700;}
 a {cursor: pointer;}
@@ -449,3 +448,4 @@ h1:after {margin-left: 0;}
 #page {height: auto; min-height: 100%;}
 .title {margin-top: 45px}
 }
+body * {opacity: 1;}
