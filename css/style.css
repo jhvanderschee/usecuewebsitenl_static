@@ -43,6 +43,7 @@
 
   
 * {margin: 0; padding: 0;}
+body * {opacity: 1;}
 img {border: 0;}
 strong, b {font-weight: 700;}
 a {cursor: pointer;}
