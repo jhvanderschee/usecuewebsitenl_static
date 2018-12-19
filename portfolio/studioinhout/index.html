@@ -5,9 +5,9 @@
 <html lang="nl">
 <head>
 <meta charset="utf-8" /> 
-<title>Vaarwel Google | Usecue web development</title>
+<title>Studio inHout. | Usecue web development</title>
 
-<meta name="description" content="Ik kwam er vandaag achter dat Google Maps op mijn website een donkere overlay toonde, met de tekst ‘for development purposes only’. Als website ontwikkelaar ...">
+<meta name="description" content="De nieuwe website van dit bedrijf is sterk door zijn eenvoud. De site is uiteraard responsive en heeft een simpele consequent doorgevoerde vormgeving. Voor d...">
 
 <link rel="shortcut icon" type="image/png" href="/img/icon-196x196.png" />
 <link rel="shortcut icon" sizes="196x196" href="/img/icon-196x196.png" />
@@ -16,30 +16,30 @@
 <meta id="viewport" name="viewport" content="width=device-width">
 
 <!-- Facebook and Twitter integration -->
-<meta property="og:title" content="Vaarwel Google"/>
-
-<meta property="og:url" content="https://www.usecue.nl/blog/vaarwel-google/"/>
+<meta property="og:title" content="Studio inHout."/>
+<meta property="og:image" content="https://www.usecue.nl/uploads/notenhouten-tafel-1.jpg"/>
+<meta property="og:url" content="https://www.usecue.nl/portfolio/studioinhout/"/>
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Usecue web development"/>
-<meta property="og:description" content="Ik kwam er vandaag achter dat Google Maps op mijn website een donkere overlay toonde, met de tekst ‘for development purposes only’. Als website ontwikkelaar ..."/>
+<meta property="og:description" content="De nieuwe website van dit bedrijf is sterk door zijn eenvoud. De site is uiteraard responsive en heeft een simpele consequent doorgevoerde vormgeving. Voor d..."/>
 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@jhvanderschee">
-<meta name="twitter:title" content="Vaarwel Google" />
-
-<meta name="twitter:url" content="https://www.usecue.nl/blog/vaarwel-google/" />
-<meta name="twitter:description" content="Ik kwam er vandaag achter dat Google Maps op mijn website een donkere overlay toonde, met de tekst ‘for development purposes only’. Als website ontwikkelaar ..." />
+<meta name="twitter:title" content="Studio inHout." />
+<meta name="twitter:image" content="https://www.usecue.nl/uploads/notenhouten-tafel-1.jpg" />
+<meta name="twitter:url" content="https://www.usecue.nl/portfolio/studioinhout/" />
+<meta name="twitter:description" content="De nieuwe website van dit bedrijf is sterk door zijn eenvoud. De site is uiteraard responsive en heeft een simpele consequent doorgevoerde vormgeving. Voor d..." />
 
 <link rel="publisher" href="https://plus.google.com/+UseCuewebdevelopmentAmsterdam">
 
-<link rel="canonical" href="https://www.usecue.nl/blog/vaarwel-google/">
+<link rel="canonical" href="https://www.usecue.nl/portfolio/studioinhout/">
 <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.usecue.nl/sitemap.xml" />
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 
-<body id="body"  class="post">
+<body id="body" style="background: #691f66;" class="portfolio">
 	<div id="particles-js"></div>
-	
+	<div id="backgroundtriangle" style="background-image: url(//images.weserv.nl/?url=www.usecue.nl/uploads/notenhouten-tafel-1.jpg&w=500&h=1000&t=squaredown);"><div id="triangle-topleft" style="border-top-color: #691f66;"></div></div>
     
     <div class="outercontent"><div class="content">
         
@@ -54,32 +54,19 @@
 
     <div class="innercontent">
 
-<h3>11.11.2018</h3>
-<h1>Vaarwel Google</h1>
+<div class="col50">
+<div class="desktop"><iframe src="//actual-harmonica.cloudvent.net/collectie/notenhouten-tafel/" scrolling="no" style="background-color: #691f66;"></iframe></div>
+<div class="mobile" style="background-color: #691f66;"><iframe src="//actual-harmonica.cloudvent.net/collectie/notenhouten-tafel/" scrolling="no" style="background-color: #691f66;"></iframe></div>
+<div id="bezel" style="background-color: #691f66;"></div>
+<img id="imgoverlay" src="/img/devices.png" alt="devices" />
+<div id="loading">Bezig met laden..<span>.</span></div>
+</div><div class="col50" id="textcell">
+<h1>Studio inHout.</h1>
+<p>De nieuwe website van dit bedrijf is sterk door zijn eenvoud. De site is uiteraard responsive en heeft een simpele consequent doorgevoerde vormgeving. Voor de techniek is gekozen voor Jekyll i.c.m. het CMS van CloudCannon.</p>
 
-<div data-cms-content-wrapper="/_layouts/post.html">
-<p>Ik kwam er vandaag achter dat Google Maps op mijn website een donkere overlay toonde, met de tekst ‘for development purposes only’. Als website ontwikkelaar en host ben ik verantwoordelijk voor honderden websites, dus je snapt dat ik enigszins in paniek raakte.</p>
-
-<p>Al snel kwam ik erachter dat ik (gelukkig?) niet de enige was met dit probleem. De website van het gemeentevervoerbedrijf (GVB) in Amsterdam, die gebruikt wordt door een half miljoen mensen per dag, had hetzelfde probleem. Je kunt dit hier zien:</p>
-
-<p><a href="/uploads/gvb.png" style="display: block;"><img src="/uploads/gvb.png" style="display: block;" /></a></p>
-
-<p>Het developers console van mijn browser toonde rode foutmeldingen en een pop-up. Het waren berichten van Google aan de eigenaar van de site. Er stond: ‘The request is missing an API key, billing has not been enabled on your account, the provided billing method is invalid (for example an expired credit card) or a self-imposed daily limit has been exceeded’. Een snelle zoekopdracht op ‘Google Maps API billing’ leidde me naar een pagina met als titel ‘Pricing that scales to fit your needs’. Hier stond dat ik Google Maps alleen kon blijven gebruiken als ik mijn factureringsgegevens invoerde.</p>
-
-<blockquote>
-  <p>Google: We hebben zonder waarschuwing je website kapot gemaakt en we houden je website gegijzeld totdat je ons een creditcard nummer geeft.</p>
-</blockquote>
-
-<p>Wat te doen? Moet ik mijn klanten een e-mail sturen, om te vragen om extra geld? En hoeveel dan? Of erger… moet ik ze vragen om hun creditcard gegevens?</p>
-
-<p>Ik was boos. Ik wilde dat mijn websites het weer deden, maar vond niet dat ik mijn klanten extra geld kon vragen vanwege een inschattingsfout van mij. En met ‘inschattingsfout’ bedoel ik ‘kiezen voor Google als partner in software ontwikkeling’. Google had me verraden. Ik had wel gelezen dat Google marktaandeel (reclameinkomsten) aan het verliezen was aan Amazon en Facebook, maar ik had niet verwacht dat dat hun loyaliteit richting software ontwikkelaars dusdanig zou beinvloeden. Het ooit (onder software ontwikkelaars) zo populaire Google was hebberig geworden en onverantwoordelijk. Ik weet niet wat ik erger vond: dat ze miljoenen website kapot hadden gemaakt, of dat ze ons (de software ontwikkelaars) de schuld gaven met hun ‘for development purposes only’ boodschap.</p>
-
-<p>Toen heb ik het enige gedaan wat ik kon: Ik heb mij opgeofferd en heb eigenhandig Google Maps verwijderd uit alle websites die ik host. Ik heb Google Maps vervangen door de open-source Leaflet library die werkt met Open Street Maps of door een zelfontwikkelde SVG oplossing (zie: <a href="https://beukenbuurt.amsterdam">beukenbuurt.amsterdam</a>). Er is een lichtpuntje: Leaflet heeft veel betere documentatie dan Google Maps en mijn zelfontwikkelde SVG oplossing is volledig AVG compliant.</p>
-
-<p>Google als technische partner in software ontwikkeling? Nee dank je, laten we dat maar niet meer doen. Ik wens Google dan ook veel succes met hun (te) dure Compute Engine en al zijn API’s. Vaarwel Google.</p>
-
+<br />
+<a href="//actual-harmonica.cloudvent.net/collectie/notenhouten-tafel/" target="_blank" class="btn">bekijk website</a>
 </div>
-
 
 
 <div class="title showmobile">Usecue <span>&nbsp;web development</span></div>
@@ -96,7 +83,7 @@
         <span style="font-size: 35%;"><a href="https://www.usecue.com/" rel="noopener">EN</a> &bull; <a href="/">NL</a></span>
 	</div></div></div>
 
-<div id="controls" class="showdesktop post">
+<div id="controls" class="showdesktop portfolio">
 	<div class="innercontrols">
 		<a onclick="menu();" class="openmenu"><img src="/img/menu2.png" class="black" alt="menu" /><img src="/img/menu.png" class="white" alt="menu" /></a>
 		<a onclick="menu();" class="closemenu"><img src="/img/close2.png" class="black" alt="close" /><img src="/img/close.png" class="white" alt="close" /></a>
@@ -125,7 +112,7 @@ function next() {
 		setTimeout(function(){next()}, 400);
 		return false;
 	}
-	document.location.href='/blog/het-internet-is-niet-meer-gratis/';
+	document.location.href='/portfolio/de-vos-en-partners/';
 	return false;
 }
 function prev() {
@@ -134,7 +121,7 @@ function prev() {
 		setTimeout(function(){prev()}, 400);
 		return false;
 	}
-	document.location.href='/blog/argumenten-voor-de-jamstack/';
+	document.location.href='/portfolio/felgen-wie-neu/';
 	return false;
 }
 var timeout;
@@ -156,6 +143,15 @@ function choose(choices) {
 }
 $(document).ready( function() {
     $("#page").addClass("loaded");
+    
+    setInterval(function () {
+        $("#loading span").toggle();
+    },500);
+    $('iframe').one("load", function() {
+        setTimeout(function () {
+            endloading();
+        }, 300)
+    });
     
 
     
