@@ -5,9 +5,9 @@
 <html lang="nl">
 <head>
 <meta charset="utf-8" /> 
-<title>Vaarwel Google | Usecue web development</title>
+<title>Case: migratie van WordPress naar Jekyll | Usecue web development</title>
 
-<meta name="description" content="Ik kwam er vandaag achter dat Google Maps op mijn website een donkere overlay toonde, met de tekst ‘for development purposes only’. Als website ontwikkelaar ...">
+<meta name="description" content="Brechje Vermaat is de eigenaresse van Studio inHout. Ze maakt prachtige maatwerk meubelen en heeft ook een eigen collectie. Usecue heeft haar site een face-l...">
 
 <link rel="shortcut icon" type="image/png" href="/img/icon-196x196.png" />
 <link rel="shortcut icon" sizes="196x196" href="/img/icon-196x196.png" />
@@ -16,23 +16,23 @@
 <meta id="viewport" name="viewport" content="width=device-width">
 
 <!-- Facebook and Twitter integration -->
-<meta property="og:title" content="Vaarwel Google"/>
+<meta property="og:title" content="Case: migratie van WordPress naar Jekyll"/>
 
-<meta property="og:url" content="https://www.usecue.nl/blog/vaarwel-google/"/>
+<meta property="og:url" content="https://www.usecue.nl/blog/case-study-betere-prestaties/"/>
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Usecue web development"/>
-<meta property="og:description" content="Ik kwam er vandaag achter dat Google Maps op mijn website een donkere overlay toonde, met de tekst ‘for development purposes only’. Als website ontwikkelaar ..."/>
+<meta property="og:description" content="Brechje Vermaat is de eigenaresse van Studio inHout. Ze maakt prachtige maatwerk meubelen en heeft ook een eigen collectie. Usecue heeft haar site een face-l..."/>
 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@jhvanderschee">
-<meta name="twitter:title" content="Vaarwel Google" />
+<meta name="twitter:title" content="Case: migratie van WordPress naar Jekyll" />
 
-<meta name="twitter:url" content="https://www.usecue.nl/blog/vaarwel-google/" />
-<meta name="twitter:description" content="Ik kwam er vandaag achter dat Google Maps op mijn website een donkere overlay toonde, met de tekst ‘for development purposes only’. Als website ontwikkelaar ..." />
+<meta name="twitter:url" content="https://www.usecue.nl/blog/case-study-betere-prestaties/" />
+<meta name="twitter:description" content="Brechje Vermaat is de eigenaresse van Studio inHout. Ze maakt prachtige maatwerk meubelen en heeft ook een eigen collectie. Usecue heeft haar site een face-l..." />
 
 <link rel="publisher" href="https://plus.google.com/+UseCuewebdevelopmentAmsterdam">
 
-<link rel="canonical" href="https://www.usecue.nl/blog/vaarwel-google/">
+<link rel="canonical" href="https://www.usecue.nl/blog/case-study-betere-prestaties/">
 <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.usecue.nl/sitemap.xml" />
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
@@ -54,29 +54,203 @@
 
     <div class="innercontent">
 
-<h3>11.11.2018</h3>
-<h1>Vaarwel Google</h1>
+<h3>28.12.2018</h3>
+<h1>Case: migratie van WordPress naar Jekyll</h1>
 
 <div data-cms-content-wrapper="/_layouts/post.html">
-<p>Ik kwam er vandaag achter dat Google Maps op mijn website een donkere overlay toonde, met de tekst ‘for development purposes only’. Als website ontwikkelaar en host ben ik verantwoordelijk voor honderden websites, dus je snapt dat ik enigszins in paniek raakte.</p>
+<p>Brechje Vermaat is de eigenaresse van Studio inHout. Ze maakt prachtige maatwerk meubelen en heeft ook een eigen collectie. Usecue heeft haar site een face-lift gegeven en gemigreerd van WordPress naar Jekyll.</p>
 
-<p>Al snel kwam ik erachter dat ik (gelukkig?) niet de enige was met dit probleem. De website van het gemeentevervoerbedrijf (GVB) in Amsterdam, die gebruikt wordt door een half miljoen mensen per dag, had hetzelfde probleem. Je kunt dit hier zien:</p>
+<p>Het <a href="/uploads/studioinhout.png">nieuwe ontwerp</a> lijkt behoorlijk veel op het <a href="/uploads/studioinhout2.png">oude ontwerp</a>. Er zijn echter wel behoorlijk wat verbeteringen doorgevoerd. Zo is de site nu <a href="/uploads/studioinhout2_mobiel.png">geschikt</a> voor <a href="/uploads/studioinhout_mobiel.png">mobiel</a>, wat belangrijk is in het kader van ‘<a href="https://developers.google.com/search/mobile-sites/mobile-first-indexing">mobile-first indexing</a>’. Daarnaast is de site mooi gecentreerd op grotere beeldschermen, hebben de afbeeldingen een hogere resolutie en is de URL-structuur beter (voor de zoekmachine). Tenslotte heeft haar site nu een SSL certificaat. De URL van haar site begon met http:// i.p.v. https:// en dat vond Google <a href="https://developers.google.com/web/tools/lighthouse/audits/https">niet leuk</a>.</p>
 
-<p><a href="/uploads/gvb.png" style="display: block;"><img src="/uploads/gvb.png" style="display: block;" /></a></p>
+<p>Om aan te tonen hoeveel de site precies verbeterd is, zie je hieronder de statistieken van <a href="https://web.dev">Google Lighthouse</a>:</p>
 
-<p>Het developers console van mijn browser toonde rode foutmeldingen en een pop-up. Het waren berichten van Google aan de eigenaar van de site. Er stond: ‘The request is missing an API key, billing has not been enabled on your account, the provided billing method is invalid (for example an expired credit card) or a self-imposed daily limit has been exceeded’. Een snelle zoekopdracht op ‘Google Maps API billing’ leidde me naar een pagina met als titel ‘Pricing that scales to fit your needs’. Hier stond dat ik Google Maps alleen kon blijven gebruiken als ik mijn factureringsgegevens invoerde.</p>
+<style>
+    /* pagespeed */
+    #pagespeed_score {padding-top: 25px; border: 1px solid #eee;}
+    #pagespeed_score .row {
+        overflow: hidden;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    #pagespeed_score .col50 {
+        float: left; 
+        width: 50%;
+        text-align: center;
+    }
+    #pagespeed_score .conicgradient {
+        background: gray conic-gradient(gray 0%, rgba(255,255,255,0.8) 0);
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+        width: 60px;
+        margin: 0 auto 25px;
+    }
+    #pagespeed_score .conicgradient_inner {
+        width: 50px;
+        padding-bottom: 50px;
+        background: white;
+        margin: 5px;
+        border-radius: 50%;
+        text-align: center;
+    }
+    #pagespeed_score .conicgradient_inner .label {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-size: 20px;
+        color: gray;
+        width: 84%;
+    }
+    #pagespeed_score h2 {margin-top: 0!important}
+</style>
 
-<blockquote>
-  <p>Google: We hebben zonder waarschuwing je website kapot gemaakt en we houden je website gegijzeld totdat je ons een creditcard nummer geeft.</p>
-</blockquote>
+<div id="pagespeed_score" class="results">
+    <div class="row">
+        <div class="col50">
 
-<p>Wat te doen? Moet ik mijn klanten een e-mail sturen, om te vragen om extra geld? En hoeveel dan? Of erger… moet ik ze vragen om hun creditcard gegevens?</p>
+            <h2>Performance</h2>
 
-<p>Ik was boos. Ik wilde dat mijn websites het weer deden, maar vond niet dat ik mijn klanten extra geld kon vragen vanwege een inschattingsfout van mij. En met ‘inschattingsfout’ bedoel ik ‘kiezen voor Google als partner in software ontwikkeling’. Google had me verraden. Ik had wel gelezen dat Google marktaandeel (reclameinkomsten) aan het verliezen was aan Amazon en Facebook, maar ik had niet verwacht dat dat hun loyaliteit richting software ontwikkelaars dusdanig zou beinvloeden. Het ooit (onder software ontwikkelaars) zo populaire Google was hebberig geworden en onverantwoordelijk. Ik weet niet wat ik erger vond: dat ze miljoenen website kapot hadden gemaakt, of dat ze ons (de software ontwikkelaars) de schuld gaven met hun ‘for development purposes only’ boodschap.</p>
+            <div class="conicgradient" style="background: #fb8c00 conic-gradient(#fb8c00 81%, rgba(255,255,255,0.8) 0);">
+                <div class="conicgradient_inner">
+                    <div class="performance_score label" style="font-weight: bold; color: #fb8c00">81</div>
+                </div>
+            </div>
 
-<p>Toen heb ik het enige gedaan wat ik kon: Ik heb mij opgeofferd en heb eigenhandig Google Maps verwijderd uit alle websites die ik host. Ik heb Google Maps vervangen door de open-source Leaflet library die werkt met Open Street Maps of door een zelfontwikkelde SVG oplossing (zie: <a href="https://beukenbuurt.amsterdam">beukenbuurt.amsterdam</a>). Er is een lichtpuntje: Leaflet heeft veel betere documentatie dan Google Maps en mijn zelfontwikkelde SVG oplossing is volledig AVG compliant.</p>
+        </div><div class="col50">
 
-<p>Google als technische partner in software ontwikkeling? Nee dank je, laten we dat maar niet meer doen. Ik wens Google dan ook veel succes met hun (te) dure Compute Engine en al zijn API’s. Vaarwel Google.</p>
+            <h2>Accessibility</h2>
+
+            <div class="conicgradient" style="background: #fb8c00 conic-gradient(#fb8c00 85%, rgba(255,255,255,0.8) 0);">
+                <div class="conicgradient_inner">
+                    <div class="accessibility_score label" style="font-weight: bold; color: #fb8c00">85</div>
+                </div>
+            </div>
+
+        </div></div>
+
+            <div class="row">
+            <div class="col50">
+
+            <h2>Best Practices</h2>
+
+            <div class="conicgradient" style="background: #fb8c00 conic-gradient(#fb8c00 69%, rgba(255,255,255,0.8) 0);">
+                <div class="conicgradient_inner">
+                    <div class="bestpractices_score label" style="font-weight: bold; color: #fb8c00">69</div>
+                </div>
+            </div>
+
+        </div><div class="col50">
+
+            <h2>SEO</h2>
+
+            <div class="conicgradient" style="background: #18b663 conic-gradient(#18b663 91%, rgba(255,255,255,0.8) 0);">
+                <div class="conicgradient_inner">
+                    <div class="seo_score label" style="font-weight: bold; color: #18b663">91</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<p>De site had een speed-index van 5 seconden (wat gemiddeld is). Deze is teruggebracht naar minder dan 2 seconden. Dat is onder andere gerealiseerd door de site middels Jekyll statisch te maken en over een CDN te serveren. De overige scores na de migratie waren:</p>
+
+<style>
+    /* pagespeed */
+    #pagespeed_score {padding-top: 25px; border: 1px solid #eee;}
+    #pagespeed_score .row {
+        overflow: hidden;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    #pagespeed_score .col50 {
+        float: left; 
+        width: 50%;
+        text-align: center;
+    }
+    #pagespeed_score .conicgradient {
+        background: gray conic-gradient(gray 0%, rgba(255,255,255,0.8) 0);
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+        width: 60px;
+        margin: 0 auto 25px;
+    }
+    #pagespeed_score .conicgradient_inner {
+        width: 50px;
+        padding-bottom: 50px;
+        background: white;
+        margin: 5px;
+        border-radius: 50%;
+        text-align: center;
+    }
+    #pagespeed_score .conicgradient_inner .label {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-size: 20px;
+        color: gray;
+        width: 84%;
+    }
+    #pagespeed_score h2 {margin-top: 0!important}
+</style>
+
+<div id="pagespeed_score" class="results">
+    <div class="row">
+        <div class="col50">
+
+            <h2>Performance</h2>
+
+            <div class="conicgradient" style="background: #18b663 conic-gradient(#18b663 99%, rgba(255,255,255,0.8) 0);">
+                <div class="conicgradient_inner">
+                    <div class="performance_score label" style="font-weight: bold; color: #18b663">99</div>
+                </div>
+            </div>
+
+        </div><div class="col50">
+
+            <h2>Accessibility</h2>
+
+            <div class="conicgradient" style="background: #18b663 conic-gradient(#18b663 100%, rgba(255,255,255,0.8) 0);">
+                <div class="conicgradient_inner">
+                    <div class="accessibility_score label" style="font-weight: bold; color: #18b663">100</div>
+                </div>
+            </div>
+
+        </div></div>
+
+            <div class="row">
+            <div class="col50">
+
+            <h2>Best Practices</h2>
+
+            <div class="conicgradient" style="background: #18b663 conic-gradient(#18b663 100%, rgba(255,255,255,0.8) 0);">
+                <div class="conicgradient_inner">
+                    <div class="bestpractices_score label" style="font-weight: bold; color: #18b663">100</div>
+                </div>
+            </div>
+
+        </div><div class="col50">
+
+            <h2>SEO</h2>
+
+            <div class="conicgradient" style="background: #18b663 conic-gradient(#18b663 100%, rgba(255,255,255,0.8) 0);">
+                <div class="conicgradient_inner">
+                    <div class="seo_score label" style="font-weight: bold; color: #18b663">100</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<p>De site presteert nu optimaal. Hij laadt lekker snel en is goed te gebruiken op mobiele telefoons. Niets staat deze site nog in de weg om hoog in de zoekmachine te eindigen. Brechje was uiteraard verguld met zoveel mooie cijfers… maar ik (nog) niet. Ik wil weten of deze nieuwe website haar bedrijf over een half jaar ook echt verder heeft geholpen. Pas dan is dit project voor mij echt geslaagd.</p>
+
+<p><a href="/portfolio/studioinhout/">Bekijk de nieuwe website →</a></p>
 
 </div>
 
@@ -125,7 +299,7 @@ function next() {
 		setTimeout(function(){next()}, 400);
 		return false;
 	}
-	document.location.href='/blog/het-internet-is-niet-meer-gratis/';
+	document.location.href='/blog/argumenten-voor-de-jamstack/';
 	return false;
 }
 function prev() {
@@ -134,7 +308,7 @@ function prev() {
 		setTimeout(function(){prev()}, 400);
 		return false;
 	}
-	document.location.href='/blog/argumenten-voor-de-jamstack/';
+	document.location.href='/blog/usecues-also-known-as-affordances/';
 	return false;
 }
 var timeout;
