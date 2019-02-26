@@ -11,7 +11,7 @@
   
   
       <url>
-        <loc>https://www.usecue.nl/blog/</loc>
+        <loc>https://www.usecue.nl/over-mij/</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
@@ -27,7 +27,7 @@
   
   
       <url>
-        <loc>https://www.usecue.nl/over-mij/</loc>
+        <loc>https://www.usecue.nl/blog/</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
@@ -215,6 +215,12 @@
   
       <url>
         <loc>https://www.usecue.nl/portfolio/studioinhout/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+       </url>
+  
+      <url>
+        <loc>https://www.usecue.nl/portfolio/zonmw/</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
