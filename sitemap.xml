@@ -45,6 +45,12 @@
   
   
       <url>
+        <loc>https://www.usecue.nl/blog/de-smartphone-revolutie/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+       </url>
+  
+      <url>
         <loc>https://www.usecue.nl/blog/case-migratie-van-wordpress-naar-jekyll/</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
