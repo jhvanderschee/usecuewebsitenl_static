@@ -11,14 +11,6 @@
   
   
       <url>
-        <loc>https://www.usecue.nl/over-mij/</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-       </url>
-  
-  
-  
-      <url>
         <loc>https://www.usecue.nl/contact/</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
@@ -35,6 +27,14 @@
   
   
       <url>
+        <loc>https://www.usecue.nl/over/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+       </url>
+  
+  
+  
+      <url>
         <loc>https://www.usecue.nl/</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
@@ -42,7 +42,27 @@
   
   
   
+      <url>
+        <loc>https://www.usecue.nl/js/javascript.js</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+       </url>
   
+  
+  
+  
+  
+      <url>
+        <loc>https://www.usecue.nl/blog/a-long-overdue-redesign/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+       </url>
+  
+      <url>
+        <loc>https://www.usecue.nl/blog/a-tribute-to-the-web/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+       </url>
   
       <url>
         <loc>https://www.usecue.nl/blog/revolutie-in-smartphone-land/</loc>
@@ -214,7 +234,7 @@
        </url>
   
       <url>
-        <loc>https://www.usecue.nl/portfolio/studioinhout/</loc>
+        <loc>https://www.usecue.nl/portfolio/studio-inhout/</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
