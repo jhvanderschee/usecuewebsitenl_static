@@ -47,24 +47,6 @@
   
   
       <url>
-        <loc>https://www.usecue.nl/blog/how-netlify-became-irrelevant/</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-       </url>
-  
-      <url>
-        <loc>https://www.usecue.nl/blog/a-long-overdue-redesign/</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-       </url>
-  
-      <url>
-        <loc>https://www.usecue.nl/blog/a-tribute-to-the-web/</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-       </url>
-  
-      <url>
         <loc>https://www.usecue.nl/blog/revolutie-in-smartphone-land/</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
@@ -114,12 +96,6 @@
   
       <url>
         <loc>https://www.usecue.nl/blog/security-awareness-2017/</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-       </url>
-  
-      <url>
-        <loc>https://www.usecue.nl/blog/turbolinks5-is-awesome/</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
