@@ -53,6 +53,12 @@
        </url>
   
       <url>
+        <loc>https://www.usecue.nl/blog/internet-en-de-boekdrukkunst/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+       </url>
+  
+      <url>
         <loc>https://www.usecue.nl/blog/een-groene-website/</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
