@@ -70,7 +70,7 @@ h2 {padding-bottom: 0.6em; padding-top: 0.6em;}
 .bgcolor #logo img {opacity: 0;}
 .bgcolor #logo:before {content: ""; width: 100%; height: 100%; background: url(/img/icon-196x196-transparent.png) center center / contain no-repeat; position: absolute;}
 #scrolltotop {top: auto; bottom: 1.7vw; right: 2vw; opacity: 0; pointer-events: none; transition: opacity 0.3s ease-in-out; max-width: calc(35% - 30px);}
-#darkmode {top: auto; bottom: 1.7vw; right: 2vw; position: fixed; transition: opacity 0.3s ease-in-out; text-decoration: none;}
+#darkmode {top: auto; bottom: 1.7vw; right: 2vw; position: fixed; transition: opacity 0.3s ease-in-out;}
 #nextlink {top: auto; bottom: 1.7vw; left: 2vw; right: auto; position: absolute; max-width: calc(65% - 30px); text-transform: lowercase;}
 #nextlinktop, #prevlinktop {top:50vh; left: 2vw; position: fixed; transition: opacity 0.3s ease-in-out; opacity: 1; transform: rotate(-90deg) translateX(-50%); transform-origin: 0% 0%;}
 #nextlinktop {left: auto; right: 2vw; transform-origin: 100% 0%; transform: rotate(90deg) translateX(50%);}
@@ -287,12 +287,13 @@ transform-origin: 50% 50%;
 
 
 .bgcolor #darkmode {pointer-events: none; opacity: 0;}
-#darkmode.selected::before {content: "☼";}
-#darkmode::before {content: "☾";}
+#darkmode.selected::before {content: "normal ";}
+#darkmode::before {content: "dark ";}
 body.darkmode:not(.bgcolor) img {filter: grayscale(100%);}
 body.darkmode:not(.bgcolor) #logo img {filter: grayscale(100%);}
 body.darkmode:not(.bgcolor) {background: #101010;}
 @media (prefers-color-scheme: dark) {
+    #darkmode {pointer-events: none; opacity: 0;}
     body:not(.bgcolor) img {filter: grayscale(100%);}
     body:not(.bgcolor) #logo img {filter: grayscale(100%);}
     body:not(.bgcolor) {background: #101010;}
