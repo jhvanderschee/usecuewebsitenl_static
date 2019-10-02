@@ -283,6 +283,6 @@ transform-origin: 50% 50%;
 }
 
 body.altcolor img {filter: grayscale(100%);}
-body.altcolor #logo img {filter: grayscale(100%) invert(100%) contrast(150%);}
+body.altcolor #logo img {filter: grayscale(100%) invert(100%) contrast(120%);}
 body.altcolor a {color: #00e; text-decoration-color: #00e7;}
 body.altcolor {color: #000; background: white;}
