@@ -292,9 +292,11 @@ transform-origin: 50% 50%;
 body.darkmode:not(.bgcolor) img {filter: grayscale(100%);}
 body.darkmode:not(.bgcolor) #logo img {filter: grayscale(100%);}
 body.darkmode:not(.bgcolor) {background: #101010;}
+body.darkmode:not(.bgcolor) #darkmodeoverlay {opacity: 1;}
 @media (prefers-color-scheme: dark) {
     #darkmode {pointer-events: none; opacity: 0;}
     body:not(.bgcolor) img {filter: grayscale(100%);}
     body:not(.bgcolor) #logo img {filter: grayscale(100%);}
     body:not(.bgcolor) {background: #101010;}
+    #darkmodeoverlay {opacity: 1;}
 }
