@@ -67,14 +67,7 @@
 <p>Bij een recent project werkte dat echter niet. Adobe Illustrator vond dat de file corrupt was en Inkscape wilde hem ook niet goed openen. Vreemd genoeg opende de file prima in een PDF reader en in GIMP. Gelukkig vond ik <a href="http://www.documentsnap.com/find-fonts-pdf/">online</a> een goede tip. Type in de terminal:</p>
 
 <blockquote>
-  <table>
-    <tbody>
-      <tr>
-        <td>strings /path/to/your/filename.pdf</td>
-        <td>grep FontName</td>
-      </tr>
-    </tbody>
-  </table>
+  <p>strings /path/to/your/filename.pdf | grep FontName</p>
 </blockquote>
 
 <p>Dat gaf me precies de informatie over de lettertypes die ik zocht. Een superfijne oplossing, waardoor ik voor de analyse van de lettertypes niet meer afhankelijk ben van de grillen van eerdergenoemde vectorprogramma’s.</p>
