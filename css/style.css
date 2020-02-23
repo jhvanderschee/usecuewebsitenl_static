@@ -300,8 +300,8 @@ transform-origin: 50% 50%;
 
 .bgcolor #lightmode {pointer-events: none!important; opacity: 0!important;}
 .lightmode #lightmode {color: #0000ee;}
-#lightmode::before {content: "au, mijn ogen!";}
-.lightmode #lightmode::before {content: "donkerder?";}
+#lightmode::before {content: "auw, mijn ogen!";}
+.lightmode #lightmode::before {content: "donker graag!";}
 .darkmode #lightmode::before {content: "helemaal blauw?";}
 
 body.darkmode:not(.bgcolor) img {filter: grayscale(100%);}
