@@ -110,11 +110,12 @@ blockquote {margin-top: 0.5em; border-left: 2px solid #dde; margin-bottom: 1.35e
 .portfolio #content {padding-top: 0;}
 .portfolio #content .svg {width: 50vw;}
 .portfolio #content .svg svg {width: 100%; height: 100%; position: relative; right: 2vw;}
-#scrolldown {position: absolute; left: 50%; margin-top: -15vh; margin-left: -0.2em;}
-#scrolldown:before, #scrolldown:after {content: ""; position: absolute; height: 1.6vw; width: 0.65vw; background: #fffd;}
-.lightmode:not(.bgcolor) #scrolldown:before, .lightmode:not(.bgcolor) #scrolldown:after {background: #0000ee;}
-#scrolldown:before {transform: skewX(45deg); transform-origin: 100% 100%;}
-#scrolldown:after {transform: skewX(-45deg); transform-origin: 0% 100%;}
+
+#scrolldown {position: absolute; left: 50%; margin-top: -15vh;}
+#scrolldown:before {content: "»"; transform: rotate(90deg); position: absolute; color: #fffd; font-size: 10rem; margin-left: -1.25rem; margin-top: -5rem;}
+.lightmode:not(.bgcolor) #scrolldown:before {color: #0000ee;}
+
+
 #postdate {font-style: italic; padding-bottom: 1em;}
 .btn {display: inline-block; padding: 0.35em 1em 0.45em; text-decoration: none; border: 1px solid rgba(255, 255, 255,0.4);}
 
@@ -134,7 +135,6 @@ blockquote {margin-top: 0.5em; border-left: 2px solid #dde; margin-bottom: 1.35e
     .home #content {width: 1250px;} /*  0.6*2000  */
     #content ul {margin-left: 28px;}
     #logo img {width: 67px;}
-    #scrolldown:before, #scrolldown:after {height: 32px; width: 13px;}
 }
 
 @media screen and (max-width: 1600px) {
@@ -157,7 +157,7 @@ blockquote {margin-top: 0.5em; border-left: 2px solid #dde; margin-bottom: 1.35e
     #content {padding: 192px 30px 272px;}
     #scrolltotop, #nextlink, #lightmode {bottom: 25px;}
     #content ul {margin-left: 22px;}
-    #scrolldown:before, #scrolldown:after {height: 24px; width: 10px;}
+    #scrolldown:before {font-size: 8rem; margin-top: -4rem; margin-left: -1rem;}
 }
 
 .mobile {display: none;}
@@ -169,7 +169,6 @@ blockquote {margin-top: 0.5em; border-left: 2px solid #dde; margin-bottom: 1.35e
     .post .fullscreen h1 {margin: 0; padding: 2.5em 0 2.7em!important;}
     #nextlink .mobile {display: inline;}
     #nextlink .desktop {display: none;}
-    #scrolldown:before, #scrolldown:after {height: 18px; width: 7px;}
 }
 @media screen and (max-width: 750px) {
     .threecols > div .medium {font-size: 60px!important;}
@@ -189,7 +188,7 @@ blockquote {margin-top: 0.5em; border-left: 2px solid #dde; margin-bottom: 1.35e
     .scrolled:not(.post) #lightmode {left: 15px; right: auto;}
     #menu {right: 15px;}
 
-    #scrolldown:before, #scrolldown:after {height: 12px; width: 5px;}
+    #scrolldown:before {font-size: 5rem; margin-top: -2.5rem; margin-left: -0.6rem;}
 }
 
 
